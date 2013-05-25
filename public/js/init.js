@@ -10,7 +10,7 @@ $(document).ready(function () {
 	numbers.init($(".numbers"));
 	numbers.update(50.0);
 
-	app.initializeSlider([25, 250, 450, 0, -455, 0, 630, 50]);
+	app.initializeSlider([25, 250, 450, 0, -455, 0, 700, 50]);
 	acc.init();
 
 	var wagon = $('#p_curve .wagon');

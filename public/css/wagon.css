@@ -1,6 +1,5 @@
 #slider-container {
 	position: relative;
-	
 }
 
 .section-inner {
@@ -28,27 +27,35 @@
 
 
 .left-section {
-	padding-top:10%;
-	padding-left:5%;
+	padding-top: 10%;
+	padding-left: 5%;
 	width: 20%;
 }
 
 	.left-section img {
-		width:100%;
+		width: 100%;
 	}
 
 .center-section {
 	width: 50%;
 }
 
+	.center-section img {
+		width: 100%;
+	}
+
 .right-section {
 	width: 20%;
 }
 
+	.right-section img {
+		width: 100%;
+	}
+
 #railroad {
 	position: absolute;
-	top:0;
-	background:  url('../img/road.png') no-repeat;
+	top: 0;
+	background: url('../img/road.png') no-repeat;
 	background-size: 100%;
 }
 
