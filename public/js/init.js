@@ -1,14 +1,22 @@
-var acc = new app.Accelerometer();
-acc.init();
+$(document).ready(function () {
 
-acc.onLeft(function() {
-	// Move slider left
-});
+	var acc = new app.Accelerometer();
+	acc.init();
 
-acc.onRight(function() {
-	// Move slider right
-});
+	acc.onLeft(function () {
+		// Move slider left
+	});
 
-acc.onNeutral(function() {
-	// Do nothing
+	acc.onRight(function () {
+		// Move slider right
+	});
+
+	acc.onNeutral(function () {
+		// Do nothing
+	});
+
+
+
+	//slider
+	app.initializeSlider();
 });
