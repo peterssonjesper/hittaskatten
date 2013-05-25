@@ -23,3 +23,9 @@
 	border-top: 1px solid #595959;
 	margin: 2em 0;
 }
+
+@include media(mobile) {
+	.nomobile {
+		display: none;
+	}
+}

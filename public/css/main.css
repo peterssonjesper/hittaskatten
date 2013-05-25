@@ -912,6 +912,12 @@ a {
   margin: 2em 0;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 28, ../../scss/_elements/_general.scss */
+  .nomobile {
+    display: none;
+  }
+}
 /* line 1, ../../scss/_elements/_form.scss */
 .submitform-wrapper {
   position: relative;
@@ -924,15 +930,21 @@ a {
     margin: 0 auto;
   }
 }
+@media only screen and (max-width: 767px) {
+  /* line 1, ../../scss/_elements/_form.scss */
+  .submitform-wrapper {
+    width: 100%;
+  }
+}
 
-/* line 10, ../../scss/_elements/_form.scss */
+/* line 13, ../../scss/_elements/_form.scss */
 .submitform {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 16, ../../scss/_elements/_form.scss */
+/* line 19, ../../scss/_elements/_form.scss */
 .submitform-inner {
   background: url('../img/bg-form.png?1369484788') repeat;
   padding: 2rem;
@@ -940,7 +952,7 @@ a {
   border-bottom: .5rem solid #606060;
 }
 
-/* line 23, ../../scss/_elements/_form.scss */
+/* line 26, ../../scss/_elements/_form.scss */
 .submitform-field {
   display: block;
   width: 100%;
@@ -958,7 +970,7 @@ a {
   padding: .5rem;
 }
 
-/* line 33, ../../scss/_elements/_form.scss */
+/* line 36, ../../scss/_elements/_form.scss */
 .submitform-thanks {
   line-height: 40px;
   width: 100%;
@@ -968,7 +980,7 @@ a {
   top: 0;
 }
 
-/* line 41, ../../scss/_elements/_form.scss */
+/* line 44, ../../scss/_elements/_form.scss */
 .submitform-submit {
   display: block;
   width: 100%;
@@ -991,7 +1003,7 @@ a {
   color: #fff;
 }
 
-/* line 58, ../../scss/_elements/_form.scss */
+/* line 61, ../../scss/_elements/_form.scss */
 .bolt, .bolt-topleft, .bolt-topright, .bolt-bottomleft, .bolt-bottomright {
   width: 0.5rem;
   height: 0.5rem;
@@ -1003,28 +1015,28 @@ a {
   background: #555657;
 }
 
-/* line 64, ../../scss/_elements/_form.scss */
+/* line 67, ../../scss/_elements/_form.scss */
 .bolt-topleft {
   position: absolute;
   top: .5rem;
   left: .5rem;
 }
 
-/* line 70, ../../scss/_elements/_form.scss */
+/* line 73, ../../scss/_elements/_form.scss */
 .bolt-topright {
   position: absolute;
   top: .5rem;
   right: .5rem;
 }
 
-/* line 77, ../../scss/_elements/_form.scss */
+/* line 80, ../../scss/_elements/_form.scss */
 .bolt-bottomleft {
   position: absolute;
   bottom: .5rem;
   left: .5rem;
 }
 
-/* line 84, ../../scss/_elements/_form.scss */
+/* line 87, ../../scss/_elements/_form.scss */
 .bolt-bottomright {
   position: absolute;
   bottom: .5rem;
@@ -1174,29 +1186,24 @@ a {
   }
 
   /* line 47, ../../scss/_elements/_numbers.scss */
-  .numbers.light-background {
-    padding-bottom: 4em;
-  }
-
-  /* line 50, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     position: absolute;
     bottom: .5em;
     left: 50%;
   }
 
-  /* line 55, ../../scss/_elements/_numbers.scss */
+  /* line 52, ../../scss/_elements/_numbers.scss */
   .numbers-arrows-inside {
     margin-left: -53.5px;
   }
 
-  /* line 58, ../../scss/_elements/_numbers.scss */
+  /* line 55, ../../scss/_elements/_numbers.scss */
   .numbers > h2 {
     margin-bottom: 1em;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 65, ../../scss/_elements/_numbers.scss */
+  /* line 62, ../../scss/_elements/_numbers.scss */
   .numbers-good, .numbers-bad {
     display: inline;
     float: left;
@@ -1209,13 +1216,13 @@ a {
     padding-bottom: 1em;
   }
 
-  /* line 71, ../../scss/_elements/_numbers.scss */
+  /* line 68, ../../scss/_elements/_numbers.scss */
   .numbers-bad {
     text-align: right;
     padding-right: 1em;
   }
 
-  /* line 75, ../../scss/_elements/_numbers.scss */
+  /* line 72, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     display: inline;
     float: left;
@@ -1225,7 +1232,7 @@ a {
     text-align: center;
   }
 
-  /* line 80, ../../scss/_elements/_numbers.scss */
+  /* line 77, ../../scss/_elements/_numbers.scss */
   .numbers-good-title, .numbers-bad-title {
     font-size: 2em;
   }

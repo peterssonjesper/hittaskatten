@@ -5,6 +5,9 @@
 		width: em(350);
 		margin: 0 auto;
 	}
+	@include media(mobile) {
+		width: 100%;
+	}
 }
 
 .submitform {
