@@ -944,6 +944,8 @@ a {
 /* line 10, ../../scss/_elements/_form.scss */
 .submitform {
   overflow: hidden;
+  position: relative;
+  margin: 0 auto;
 }
 
 /* line 14, ../../scss/_elements/_form.scss */

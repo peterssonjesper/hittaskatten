@@ -14,6 +14,10 @@
 			}, 500, function() {
 				$(this).animate({
 					'top' : 40
+				}, function() {
+					$(this).animate({
+						'width' : 0
+					});
 				});
 				$('#submitform-thanks').fadeIn('slow');
 			});
