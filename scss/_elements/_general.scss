@@ -32,3 +32,11 @@
 		display: none;
 	}
 }
+
+.tilt-text {
+	display: none;
+	text-align: center;
+	.hastilt & {
+		display: block;
+	}
+}

@@ -922,6 +922,16 @@ a {
     display: none;
   }
 }
+/* line 36, ../../scss/_elements/_general.scss */
+.tilt-text {
+  display: none;
+  text-align: center;
+}
+/* line 39, ../../scss/_elements/_general.scss */
+.hastilt .tilt-text {
+  display: block;
+}
+
 /* line 1, ../../scss/_elements/_form.scss */
 .submitform-wrapper {
   position: relative;
