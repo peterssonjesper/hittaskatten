@@ -17,7 +17,7 @@ var app = app || {};
 			gripClass: 'wagon',
 			rotateGrip: true,
 			useCanvas: true,
-			curve: { width: 4, color: "#333", cap: "round" },
+			curve: { width: 4, color: "#595959", cap: "round" },
 			value: 50,
 			points: scaledPoints,
 			dataPoints: 200,
