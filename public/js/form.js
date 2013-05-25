@@ -3,8 +3,9 @@
 	app.Form = function() {
 
 
-		this.init = function($formElement) {
+		this.init = function($formElement,$thanksElement) {
 			this.$formElement = $formElement;
+			this.$thanksElement = $thanksElement;
 		};
 
 		this.close = function() {
@@ -14,7 +15,7 @@
 				$(this).animate({
 					'top' : 40
 				});
-				$("#thanks").fadeIn('slow');
+				$('#submitform-thanks').fadeIn('slow');
 			});
 		};
 

@@ -22,8 +22,8 @@ $(document).ready(function () {
 	});
 
 	var form = new app.Form();
-	form.init($("form"));
-	$("form").submit(function() {
+	form.init($("#submitform"),$("#submitform-thanks"));
+	$("#submitform").submit(function() {
 		form.close();
 		return false;
 	});
