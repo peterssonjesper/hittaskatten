@@ -12,15 +12,22 @@
 	.left-section {
 		float: left;
 		width: 50%;
+		.section-inner {
+			margin-bottom: -1em;
+		}
 	}
 	.right-section {
 		float: right;
 		width: 50%;
+		.section-inner {
+			margin-top: -1em;
+		}
 	}
 	.center-section {
 		clear: both;
 		margin: 0 auto;
 	}
+
 
 }
 
