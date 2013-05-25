@@ -848,7 +848,7 @@ html, body {
 
 /* line 5, ../../scss/_shared/_layout.scss */
 body {
-  background: url('../img/bg-pattern.png?1369470065');
+  background: url('../img/bg-pattern.png?1369473950');
   color: white;
   position: relative;
   font-family: 'Cutive', serif;
@@ -934,7 +934,7 @@ a {
 
 /* line 16, ../../scss/_elements/_form.scss */
 .submitform-inner {
-  background: url('../img/bg-form.png?1369478589') repeat;
+  background: url('../img/bg-form.png?1369484788') repeat;
   padding: 2rem;
   position: relative;
   border-bottom: .5rem solid #606060;
@@ -1034,7 +1034,6 @@ a {
 /* line 1, ../../scss/_elements/_results.scss */
 .results-wrapper {
   *zoom: 1;
-  margin-top: 1em;
 }
 /* line 27, ../../scss/_lib/_grid.scss */
 .results-wrapper:before, .results-wrapper:after {
@@ -1052,6 +1051,10 @@ a {
 /* line 9, ../../scss/_elements/_results.scss */
 .results-wrapper .results-right {
   float: right;
+}
+/* line 13, ../../scss/_elements/_results.scss */
+.results-wrapper.spacing {
+  margin-top: 1em;
 }
 
 /* line 1, ../../scss/_elements/_footer.scss */
@@ -1107,13 +1110,13 @@ a {
 
 /* line 7, ../../scss/_elements/_numbers.scss */
 .left-arrow {
-  background: url('../img/arrow-left.png?1369487893');
+  background: url('../img/arrow-left.png?1369489626');
   background-size: cover;
 }
 
 /* line 12, ../../scss/_elements/_numbers.scss */
 .right-arrow {
-  background: url('../img/arrow-right.png?1369487902');
+  background: url('../img/arrow-right.png?1369489626');
   background-size: cover;
 }
 
@@ -1127,12 +1130,6 @@ a {
 .numbers {
   *zoom: 1;
   position: relative;
-  background: rgba(255, 255, 255, 0.2);
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  -ms-border-radius: 1em;
-  -o-border-radius: 1em;
-  border-radius: 1em;
 }
 /* line 27, ../../scss/_lib/_grid.scss */
 .numbers:before, .numbers:after {
@@ -1143,57 +1140,88 @@ a {
 .numbers:after {
   clear: both;
 }
+/* line 25, ../../scss/_elements/_numbers.scss */
+.numbers > h2 {
+  margin-bottom: 0;
+}
+
+/* line 30, ../../scss/_elements/_numbers.scss */
+.numbers.light-background {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+}
 
 @media only screen and (max-width: 767px) {
-  /* line 29, ../../scss/_elements/_numbers.scss */
+  /* line 36, ../../scss/_elements/_numbers.scss */
   .numbers-good {
     width: 40%;
     float: left;
   }
 
-  /* line 33, ../../scss/_elements/_numbers.scss */
+  /* line 40, ../../scss/_elements/_numbers.scss */
   .numbers-bad {
     width: 40%;
     float: right;
   }
 
-  /* line 37, ../../scss/_elements/_numbers.scss */
+  /* line 44, ../../scss/_elements/_numbers.scss */
   .numbers {
     padding: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
   }
 
-  /* line 41, ../../scss/_elements/_numbers.scss */
+  /* line 48, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     position: absolute;
     bottom: .5em;
     left: 50%;
   }
 
-  /* line 46, ../../scss/_elements/_numbers.scss */
+  /* line 53, ../../scss/_elements/_numbers.scss */
   .numbers-arrows-inside {
     margin-left: -53.5px;
   }
+
+  /* line 56, ../../scss/_elements/_numbers.scss */
+  .numbers > h2 {
+    margin-bottom: 1em;
+  }
 }
 @media only screen and (min-width: 768px) {
-  /* line 53, ../../scss/_elements/_numbers.scss */
+  /* line 63, ../../scss/_elements/_numbers.scss */
   .numbers-good, .numbers-bad {
     display: inline;
     float: left;
-    width: 31.25%;
+    width: 39.58333%;
     margin: 0 1.04167%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-bottom: 1em;
   }
 
-  /* line 56, ../../scss/_elements/_numbers.scss */
+  /* line 69, ../../scss/_elements/_numbers.scss */
+  .numbers-bad {
+    text-align: right;
+    padding-right: 1em;
+  }
+
+  /* line 73, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     display: inline;
     float: left;
-    width: 31.25%;
+    width: 14.58333%;
     margin: 0 1.04167%;
     padding-top: 4em;
+    text-align: center;
   }
 
-  /* line 60, ../../scss/_elements/_numbers.scss */
+  /* line 78, ../../scss/_elements/_numbers.scss */
   .numbers-good-title, .numbers-bad-title {
     font-size: 2em;
   }
