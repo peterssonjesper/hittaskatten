@@ -4,6 +4,10 @@
 	left:500px;
 }
 
+.left, .center, .right {
+	float: left;
+}
+
 #p_curve {
 		background:  url('../img/road.png') no-repeat;
 		background-position: 10px, 40px;
