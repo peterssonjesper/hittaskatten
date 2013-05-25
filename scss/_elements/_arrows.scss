@@ -1,0 +1,16 @@
+.arrow {
+	width: (107/2) * 1px;
+	height: (82/2) * 1px;
+	display: block;
+	text-decoration: none;
+}
+.left-arrow {
+	@extend .arrow;
+	@include background(image-url('arrow-left.png'));
+	background-size: cover;
+}
+.right-arrow {
+	@extend .arrow;
+	@include background(image-url('arrow-right.png'));
+	background-size: cover;
+}

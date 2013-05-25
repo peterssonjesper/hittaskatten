@@ -21,6 +21,7 @@ a {
 		margin: 0 auto;
 	}
 }
+
 // The top image
 .top-img {
 	width: 100%;
@@ -29,11 +30,4 @@ a {
 	top: 0;
 	left: 0;
 }
-@include media (tabletandabove) {
-	.footer-text {
-	@include column(8);
-	}
-	.footer-links {
-		@include column(4);
-	}
-}
+

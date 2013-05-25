@@ -871,7 +871,7 @@ a {
   }
 }
 
-/* line 25, ../../scss/_shared/_layout.scss */
+/* line 26, ../../scss/_shared/_layout.scss */
 .top-img {
   width: 100%;
   z-index: -1;
@@ -880,23 +880,6 @@ a {
   left: 0;
 }
 
-@media only screen and (min-width: 768px) {
-  /* line 33, ../../scss/_shared/_layout.scss */
-  .footer-text {
-    display: inline;
-    float: left;
-    width: 620px;
-    margin: 0 10px;
-  }
-
-  /* line 36, ../../scss/_shared/_layout.scss */
-  .footer-links {
-    display: inline;
-    float: left;
-    width: 300px;
-    margin: 0 10px;
-  }
-}
 /* line 1, ../../scss/_elements/_general.scss */
 .header, .header-large, .header-medium, .header-small {
   font-family: 'Cutive', serif;
@@ -1061,8 +1044,9 @@ a {
   .footer-links {
     display: inline;
     float: left;
-    width: 300px;
+    width: 220px;
     margin: 0 10px;
+    margin-left: 90px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1073,11 +1057,31 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 16, ../../scss/_elements/_footer.scss */
+  /* line 17, ../../scss/_elements/_footer.scss */
   .footer-text {
     display: inline;
     float: left;
-    width: 620px;
+    width: 540px;
     margin: 0 10px;
   }
+}
+
+/* line 1, ../../scss/_elements/_arrows.scss */
+.arrow, .left-arrow, .right-arrow {
+  width: 53.5px;
+  height: 41px;
+  display: block;
+  text-decoration: none;
+}
+
+/* line 7, ../../scss/_elements/_arrows.scss */
+.left-arrow {
+  background: url('../img/arrow-left.png?1369487893');
+  background-size: cover;
+}
+
+/* line 12, ../../scss/_elements/_arrows.scss */
+.right-arrow {
+  background: url('../img/arrow-right.png?1369487902');
+  background-size: cover;
 }
