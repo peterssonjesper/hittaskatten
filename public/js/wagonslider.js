@@ -4,7 +4,7 @@ var app = app || {};
 	var width = 
 	app.initializeSlider = function () {
 		var desktopPoints = [25, 250, 450, 0, -455, 0, 700, 50];
-		var mobilePoints = [25, 350, 25, -175, 50, 175, 425, 50];
+		var mobilePoints = [25, 25, 50, 200, 0, -250, 450, 350];
 		var windowWidth = window.innerWidth;
 
 
@@ -65,29 +65,29 @@ var app = app || {};
 	var updateZambiaAndIsland = function (schoolSrc, islandSrc) {
 		console.log('change img to ' + schoolSrc + ' and ' + islandSrc);
 		$('#zambia').attr('src',schoolSrc);
-		//$('#island').src(islandSrc);
+		$('#cayman').attr('src',islandSrc);
 	}
 
 
 	var imageUpdateDependingOnSlider = function (sliderValue) {
 		if (20 < sliderValue && sliderValue <= 25) {
 			//disaster
-			updateZambiaAndIsland('img/zambia-1.png', 'img/island-4.png');
+			updateZambiaAndIsland('img/zambia-4.png', 'img/cayman-1.png');
 		}
 
 		if (25 < sliderValue && sliderValue <= 50) {
 			//slum
-			updateZambiaAndIsland('img/zambia-2.png', 'img/island-3.png');
+			updateZambiaAndIsland('img/zambia-3.png', 'img/cayman-2.png');
 		}
 
 		if (50 < sliderValue && sliderValue <= 75) {
 			//decent
-			updateZambiaAndIsland('img/zambia-3.png', 'img/island-2.png');
+			updateZambiaAndIsland('img/zambia-2.png', 'img/cayman-3.png');
 		}
 
 		if (75 < sliderValue && sliderValue <= 80) {
 			//awsome
-			updateZambiaAndIsland('img/zambia-4.png', 'img/island-1.png');
+			updateZambiaAndIsland('img/zambia-1.png', 'img/cayman-4.png');
 		}
 
 

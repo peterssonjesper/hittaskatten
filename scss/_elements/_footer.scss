@@ -20,3 +20,14 @@
 		@include column(7);
 	}
 }
+.footer.logo {
+	background: #212427;
+	height: 80px;
+	line-height: 80px;
+	.inner {
+		padding: 0;
+		img {
+			margin-left: 10px;
+		}
+	}
+}
