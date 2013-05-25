@@ -48,12 +48,16 @@
 	@include border-radius(.5rem);
 	@include box-sizing(border-box);
 	@include font-header;
+	@include transition(all .25s);
 	margin-top: 1rem;
 	padding: .5rem;
 	padding-top: .8rem;
 	border: none;
 	border-bottom: .3rem solid #a12250;
 	color: #fff;
+	&:hover  {
+		background: #db4f79;
+	}
 }
 
 $bolt-size: .5rem;

@@ -927,11 +927,13 @@ a {
   display: none;
   text-align: center;
 }
-/* line 39, ../../scss/_elements/_general.scss */
-.hastilt .tilt-text {
-  display: block;
-}
 
+@media only screen and (max-width: 767px) {
+  /* line 41, ../../scss/_elements/_general.scss */
+  .hastilt .tilt-text {
+    display: block;
+  }
+}
 /* line 1, ../../scss/_elements/_form.scss */
 .submitform-wrapper {
   position: relative;
@@ -1009,6 +1011,10 @@ a {
   box-sizing: border-box;
   font-family: 'Cutive', serif;
   font-weight: bold;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
   margin-top: 1rem;
   padding: .5rem;
   padding-top: .8rem;
@@ -1016,8 +1022,12 @@ a {
   border-bottom: .3rem solid #a12250;
   color: #fff;
 }
+/* line 58, ../../scss/_elements/_form.scss */
+.submitform-submit:hover {
+  background: #db4f79;
+}
 
-/* line 61, ../../scss/_elements/_form.scss */
+/* line 65, ../../scss/_elements/_form.scss */
 .bolt, .bolt-topleft, .bolt-topright, .bolt-bottomleft, .bolt-bottomright {
   width: 0.5rem;
   height: 0.5rem;
@@ -1029,28 +1039,28 @@ a {
   background: #555657;
 }
 
-/* line 67, ../../scss/_elements/_form.scss */
+/* line 71, ../../scss/_elements/_form.scss */
 .bolt-topleft {
   position: absolute;
   top: .5rem;
   left: .5rem;
 }
 
-/* line 73, ../../scss/_elements/_form.scss */
+/* line 77, ../../scss/_elements/_form.scss */
 .bolt-topright {
   position: absolute;
   top: .5rem;
   right: .5rem;
 }
 
-/* line 80, ../../scss/_elements/_form.scss */
+/* line 84, ../../scss/_elements/_form.scss */
 .bolt-bottomleft {
   position: absolute;
   bottom: .5rem;
   left: .5rem;
 }
 
-/* line 87, ../../scss/_elements/_form.scss */
+/* line 91, ../../scss/_elements/_form.scss */
 .bolt-bottomright {
   position: absolute;
   bottom: .5rem;
@@ -1116,10 +1126,11 @@ a {
 .footer-links-item {
   display: block;
   margin-bottom: .5em;
+  color: #ffb5b5;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 10, ../../scss/_elements/_footer.scss */
+  /* line 11, ../../scss/_elements/_footer.scss */
   .footer-links {
     display: inline;
     float: left;
@@ -1129,14 +1140,14 @@ a {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 10, ../../scss/_elements/_footer.scss */
+  /* line 11, ../../scss/_elements/_footer.scss */
   .footer-links {
     margin-top: 2rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 19, ../../scss/_elements/_footer.scss */
+  /* line 20, ../../scss/_elements/_footer.scss */
   .footer-text {
     display: inline;
     float: left;
@@ -1145,17 +1156,17 @@ a {
   }
 }
 
-/* line 24, ../../scss/_elements/_footer.scss */
+/* line 25, ../../scss/_elements/_footer.scss */
 .footer.logo {
   background: #212427;
   height: 80px;
   line-height: 80px;
 }
-/* line 28, ../../scss/_elements/_footer.scss */
+/* line 29, ../../scss/_elements/_footer.scss */
 .footer.logo .inner {
   padding: 0;
 }
-/* line 30, ../../scss/_elements/_footer.scss */
+/* line 31, ../../scss/_elements/_footer.scss */
 .footer.logo .inner img {
   margin-left: 10px;
 }
