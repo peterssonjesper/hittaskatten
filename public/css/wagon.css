@@ -1,10 +1,28 @@
 #slider-container {
 	position: relative;
-
+	
 }
 
 .left-section, .center-section, .right-section {
 	float: left;
+}
+
+.left-section {
+	padding-top:10%;
+	padding-left:5%;
+	width: 20%;
+}
+
+	.left-section img {
+		width:100%;
+	}
+
+.center-section {
+	width: 50%;
+}
+
+.right-section {
+	width: 20%;
 }
 
 #railroad {
@@ -27,3 +45,4 @@
 	width: 98px;
 	height: 102px;
 }
+

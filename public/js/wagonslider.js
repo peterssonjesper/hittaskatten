@@ -31,8 +31,6 @@ var app = app || {};
 		var wagonOriginalWidth = 102;
 		var backgroundRatioInProcent = zoomRatio * 100;
 		var $wagon = $('.wagon');
-		//$wagon.height(wagonOriginalHeight * zoomRatio);
-		//$wagon.width(wagonOriginalWidth * zoomRatio);
 		$('.wagon').css('background-size', backgroundRatioInProcent + '%');
 
 		/* Manipulating the railroad */
