@@ -915,7 +915,6 @@ a {
 /* line 1, ../../scss/_elements/_form.scss */
 .submitform-wrapper {
   position: relative;
-  width: 90%;
 }
 @media only screen and (min-width: 768px) {
   /* line 1, ../../scss/_elements/_form.scss */
@@ -925,14 +924,14 @@ a {
   }
 }
 
-/* line 10, ../../scss/_elements/_form.scss */
+/* line 9, ../../scss/_elements/_form.scss */
 .submitform {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 16, ../../scss/_elements/_form.scss */
+/* line 15, ../../scss/_elements/_form.scss */
 .submitform-inner {
   background: url('../img/bg-form.png?1369478589') repeat;
   padding: 2rem;
@@ -940,7 +939,7 @@ a {
   border-bottom: .5rem solid #606060;
 }
 
-/* line 23, ../../scss/_elements/_form.scss */
+/* line 22, ../../scss/_elements/_form.scss */
 .submitform-field {
   display: block;
   width: 100%;
@@ -958,7 +957,7 @@ a {
   padding: .5rem;
 }
 
-/* line 33, ../../scss/_elements/_form.scss */
+/* line 32, ../../scss/_elements/_form.scss */
 .submitform-thanks {
   line-height: 40px;
   width: 100%;
@@ -968,7 +967,7 @@ a {
   top: 0;
 }
 
-/* line 41, ../../scss/_elements/_form.scss */
+/* line 40, ../../scss/_elements/_form.scss */
 .submitform-submit {
   display: block;
   width: 100%;
@@ -987,11 +986,11 @@ a {
   padding: .5rem;
   padding-top: .8rem;
   border: none;
-  border-bottom: .5rem solid #a12250;
+  border-bottom: .3rem solid #a12250;
   color: #fff;
 }
 
-/* line 58, ../../scss/_elements/_form.scss */
+/* line 57, ../../scss/_elements/_form.scss */
 .bolt, .bolt-topleft, .bolt-topright, .bolt-bottomleft, .bolt-bottomright {
   width: 0.5rem;
   height: 0.5rem;
@@ -1003,28 +1002,28 @@ a {
   background: #555657;
 }
 
-/* line 64, ../../scss/_elements/_form.scss */
+/* line 63, ../../scss/_elements/_form.scss */
 .bolt-topleft {
   position: absolute;
   top: .5rem;
   left: .5rem;
 }
 
-/* line 70, ../../scss/_elements/_form.scss */
+/* line 69, ../../scss/_elements/_form.scss */
 .bolt-topright {
   position: absolute;
   top: .5rem;
   right: .5rem;
 }
 
-/* line 77, ../../scss/_elements/_form.scss */
+/* line 76, ../../scss/_elements/_form.scss */
 .bolt-bottomleft {
   position: absolute;
   bottom: .5rem;
   left: .5rem;
 }
 
-/* line 84, ../../scss/_elements/_form.scss */
+/* line 83, ../../scss/_elements/_form.scss */
 .bolt-bottomright {
   position: absolute;
   bottom: .5rem;
@@ -1034,7 +1033,6 @@ a {
 /* line 1, ../../scss/_elements/_results.scss */
 .results-wrapper {
   *zoom: 1;
-  margin-top: 1em;
 }
 /* line 27, ../../scss/_lib/_grid.scss */
 .results-wrapper:before, .results-wrapper:after {
@@ -1052,6 +1050,10 @@ a {
 /* line 9, ../../scss/_elements/_results.scss */
 .results-wrapper .results-right {
   float: right;
+}
+/* line 13, ../../scss/_elements/_results.scss */
+.results-wrapper.spacing {
+  margin-top: 1em;
 }
 
 /* line 1, ../../scss/_elements/_footer.scss */
@@ -1127,12 +1129,6 @@ a {
 .numbers {
   *zoom: 1;
   position: relative;
-  background: rgba(255, 255, 255, 0.2);
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  -ms-border-radius: 1em;
-  -o-border-radius: 1em;
-  border-radius: 1em;
 }
 /* line 27, ../../scss/_lib/_grid.scss */
 .numbers:before, .numbers:after {
@@ -1143,57 +1139,92 @@ a {
 .numbers:after {
   clear: both;
 }
+/* line 25, ../../scss/_elements/_numbers.scss */
+.numbers > h2 {
+  margin-bottom: 0;
+}
+
+/* line 30, ../../scss/_elements/_numbers.scss */
+.numbers.light-background {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+}
 
 @media only screen and (max-width: 767px) {
-  /* line 29, ../../scss/_elements/_numbers.scss */
+  /* line 36, ../../scss/_elements/_numbers.scss */
   .numbers-good {
     width: 40%;
     float: left;
   }
 
-  /* line 33, ../../scss/_elements/_numbers.scss */
+  /* line 40, ../../scss/_elements/_numbers.scss */
   .numbers-bad {
     width: 40%;
     float: right;
   }
 
-  /* line 37, ../../scss/_elements/_numbers.scss */
+  /* line 44, ../../scss/_elements/_numbers.scss */
   .numbers {
     padding: 1em;
-    padding-bottom: 3em;
   }
 
-  /* line 41, ../../scss/_elements/_numbers.scss */
+  /* line 47, ../../scss/_elements/_numbers.scss */
+  .numbers.light-background {
+    padding-bottom: 4em;
+  }
+
+  /* line 50, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     position: absolute;
     bottom: .5em;
     left: 50%;
   }
 
-  /* line 46, ../../scss/_elements/_numbers.scss */
+  /* line 55, ../../scss/_elements/_numbers.scss */
   .numbers-arrows-inside {
     margin-left: -53.5px;
   }
+
+  /* line 58, ../../scss/_elements/_numbers.scss */
+  .numbers > h2 {
+    margin-bottom: 1em;
+  }
 }
 @media only screen and (min-width: 768px) {
-  /* line 53, ../../scss/_elements/_numbers.scss */
+  /* line 65, ../../scss/_elements/_numbers.scss */
   .numbers-good, .numbers-bad {
     display: inline;
     float: left;
-    width: 31.25%;
+    width: 39.58333%;
     margin: 0 1.04167%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-bottom: 1em;
   }
 
-  /* line 56, ../../scss/_elements/_numbers.scss */
+  /* line 71, ../../scss/_elements/_numbers.scss */
+  .numbers-bad {
+    text-align: right;
+    padding-right: 1em;
+  }
+
+  /* line 75, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     display: inline;
     float: left;
-    width: 31.25%;
+    width: 14.58333%;
     margin: 0 1.04167%;
     padding-top: 4em;
+    text-align: center;
   }
 
-  /* line 60, ../../scss/_elements/_numbers.scss */
+  /* line 80, ../../scss/_elements/_numbers.scss */
   .numbers-good-title, .numbers-bad-title {
     font-size: 2em;
   }

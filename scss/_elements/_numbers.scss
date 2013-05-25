@@ -21,6 +21,13 @@
 .numbers {
 	@include clearfix;
 	position: relative;
+
+	> h2 {
+		margin-bottom: 0;
+	}
+}
+
+.numbers.light-background {
 	background: rgba(255,255,255,.2);
 	@include border-radius(1em);
 }
@@ -36,7 +43,9 @@
 	}
 	.numbers {
 		padding: 1em;
-		padding-bottom: 3em;
+	}
+	.numbers.light-background {
+		padding-bottom: 4em;
 	}
 	.numbers-arrows {
 		position: absolute;
@@ -46,16 +55,27 @@
 	.numbers-arrows-inside {
 		margin-left: (107/2) * -1px;
 	}
+	.numbers > h2 {
+		margin-bottom: 1em;
+	}
 }
 
 @include media(tabletandabove) {
 	
 	.numbers-good,.numbers-bad {
-		@include column(4);
+		@include column(5);
+		@include box-sizing(border-box);
+		padding-left: 1em;
+		padding-bottom: 1em;
+	}
+	.numbers-bad {
+		text-align: right;
+		padding-right: 1em;
 	}
 	.numbers-arrows {
-		@include column(4);
+		@include column(2);
 		padding-top: 4em;
+		text-align: center;
 	}
 	.numbers-good-title,.numbers-bad-title {
 		font-size: 2em;

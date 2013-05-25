@@ -1,6 +1,5 @@
 .submitform-wrapper {
 	position: relative;
-	width: 90%;
 	@include media(tabletandabove) {
 		width: em(350);
 		margin: 0 auto;
@@ -49,7 +48,7 @@
 	padding: .5rem;
 	padding-top: .8rem;
 	border: none;
-	border-bottom: .5rem solid #a12250;
+	border-bottom: .3rem solid #a12250;
 	color: #fff;
 }
 
