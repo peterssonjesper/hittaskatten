@@ -1,0 +1,21 @@
+#slider-container {
+	position: absolute;
+	top:500px;
+	left:500px;
+}
+
+#p_curve {
+		background:  url('../img/road.png') no-repeat;
+		background-position: 10px, 40px;
+		height: 352px;
+		width: 639px;
+	}
+#p_curve .wagon{
+	background-image : url('../img/vagn.png');
+	background-repeat:no-repeat;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	width: 98px;
+	height: 102px;
+}
