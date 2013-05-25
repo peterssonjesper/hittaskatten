@@ -14,20 +14,20 @@ var app = app || {};
 			zoomRatio = 1;
 		}
 
-		var mobileMode = windowWidth > 700;
+		var mobileMode = windowWidth < 700;
 
 		var points;
 		if (mobileMode) {
-			points = desktopPoints;
+			points = mobilePoints;
 		}
 		else {
-			points = mobilePoints;
+			points = desktopPoints;
 		}
 		var scaledPoints = $.map(points, function (point) { return point * zoomRatio })
 		var pathslider = $('#p_curve');
 		pathslider.pathslider({
 			gripClass: 'wagon',
-			rotateGrip: mobileMode,
+			rotateGrip: !mobileMode,
 			useCanvas: true,
 			curve: { width: 4, color: "#595959", cap: "round" },
 			value: 50,
