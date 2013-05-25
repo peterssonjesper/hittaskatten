@@ -1,0 +1,9 @@
+#p_curve .wagon{
+	background-image : url('../images/vagn.png');
+	background-repeat:no-repeat;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	width: 98px;
+	height: 102px;
+}

@@ -13,6 +13,7 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/wagon.css">
 	<link rel="stylesheet" href="css/pathslider.css">
 </head>
 <body>
@@ -32,16 +33,19 @@
 		$(function () {
 
 			$('#p_curve').pathslider({
-				gripClass: 'black',
+				gripClass: 'wagon',
 				rotateGrip: true,
+				useCanvas: true,
+				curve: { width: 4, color: "#333", cap: "round" },
 				value: 50,
-				points: [38, 82, 200, 25, -125, -300, 38, 157],
+				points: [25, 250, 150, 25, -125, 25, 275, 25],
 				dataPoints: 200,
 				tolerance: 3,
 				range: 30
 			});
 		});
 	</script>
+
 </body>
 
 </html>
