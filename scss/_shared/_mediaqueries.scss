@@ -1,0 +1,29 @@
+// --------------------------------------------------
+// Media queries inside selectors
+// Example: http://mikefowler.me/thoughts/passing-content-to-mixins-in-sass/
+// --------------------------------------------------
+
+//Variables
+$mq-desktop-start: em(992);
+$mq-tablet-start: em(768);
+$mq-tablet-end: em(991);
+$mq-mobile-end: em(767);
+
+// The magic
+@mixin media($type) {
+  @if $type == desktop {
+      @media only screen and (min-width: $mq-desktop-start) {
+          @content;
+      }
+  }
+  @else if $type == tablet {
+      @media only screen and (min-width: $mq-tablet-start) and (max-width: $mq-tablet-end) {
+          @content;
+      }
+  }
+  @else if $type == mobile {
+      @media only screen and (max-width: $mq-mobile-end) {
+          @content;
+      }
+  }
+}

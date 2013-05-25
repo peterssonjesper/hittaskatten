@@ -1,0 +1,38 @@
+// --------------------------------------------------
+// This file includes "Mixins" used to modularize CSS
+// Read more: http://sass-lang.com/#mixins
+// --------------------------------------------------
+//
+
+// Mixin to transform pixels to em (base: 16)
+@function em($target, $context: 16) {
+    @return ($target / $context) * 1em;
+}
+
+// Mixin to create background images with svg progressive enhancement
+@mixin bg-allformats($name) {
+	background: url('#{$imagepath}/#{$name}.png');
+	.svg & {
+		background-image: url('#{$imagepath}/svg/#{$name}.svg');
+	}
+}
+
+// Some kind of drop shadow (could be removed)
+@mixin boxshadow {
+	@include box-shadow(.2em .2em 0.3em rgba(0,0,0,0.1));
+}
+
+// El buttton
+@mixin button {
+	cursor: pointer;
+	text-decoration: none;
+	&:focus {
+		outline: 0;
+		border: 2px solid $pmcolor-orange-b;
+	}
+	&:active {
+		position: relative;
+		bottom: -1px;
+	}
+}
+

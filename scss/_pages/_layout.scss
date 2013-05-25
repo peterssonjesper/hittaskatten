@@ -1,0 +1,24 @@
+html,body {
+	height: 100%;
+}
+
+body {
+	@include background(image-url("bg-pattern.png"));
+	color: $textcolor;
+	position: relative;
+}
+
+// The outer box with the bg image
+.outer {
+	@include background(image-url("top-image.png") no-repeat);
+	background-size: contain;
+	height: 100%;
+	padding-top: 20%;
+}
+.inner {
+	padding: 1em;
+	@include media(desktop) {
+		max-width: em(960);
+		margin: 0 auto;
+	}
+}
