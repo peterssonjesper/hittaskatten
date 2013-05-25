@@ -3,9 +3,29 @@
 	
 }
 
+.section-inner {
+	position: relative;
+}
+.section-img {
+	width: 100%;
+	display: block;
+}
+.section-left-img {
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+.section-right-img {
+	position: absolute;
+	bottom: 90%;
+	right: 0;
+}
+
 .left-section, .center-section, .right-section {
 	float: left;
 }
+
+
 
 .left-section {
 	padding-top:10%;
