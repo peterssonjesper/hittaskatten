@@ -1336,7 +1336,7 @@ a {
   /* line 20, ../../scss/_elements/_wagon.scss */
   .center-section {
     clear: both;
-    width: 100%;
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1353,51 +1353,44 @@ a {
     left: 0;
   }
 
-  /* line 38, ../../scss/_elements/_wagon.scss */
-  .section-right-img {
-    position: absolute;
-    bottom: 90%;
-    right: 0;
-  }
-
-  /* line 44, ../../scss/_elements/_wagon.scss */
+  /* line 41, ../../scss/_elements/_wagon.scss */
   .left-section, .center-section, .right-section {
     float: left;
   }
 
-  /* line 48, ../../scss/_elements/_wagon.scss */
+  /* line 45, ../../scss/_elements/_wagon.scss */
   .left-section {
     padding-top: 10%;
     padding-left: 5%;
     width: 20%;
   }
 
-  /* line 54, ../../scss/_elements/_wagon.scss */
+  /* line 51, ../../scss/_elements/_wagon.scss */
   .right-section {
     width: 20%;
   }
 }
-/* line 61, ../../scss/_elements/_wagon.scss */
+/* line 58, ../../scss/_elements/_wagon.scss */
 .center-section {
   width: 50%;
 }
 
-/* line 65, ../../scss/_elements/_wagon.scss */
+/* line 62, ../../scss/_elements/_wagon.scss */
 .center-section img {
   width: 100%;
 }
 
-/* line 68, ../../scss/_elements/_wagon.scss */
+/* line 65, ../../scss/_elements/_wagon.scss */
 .right-section img {
   width: 100%;
 }
 
-/* line 71, ../../scss/_elements/_wagon.scss */
+/* line 68, ../../scss/_elements/_wagon.scss */
 .left-section img {
   width: 100%;
 }
 
-/* line 75, ../../scss/_elements/_wagon.scss */
+/* line 72, ../../scss/_elements/_wagon.scss */
 #railroad {
   position: absolute;
   top: 0;
@@ -1405,12 +1398,12 @@ a {
   background-size: 100%;
 }
 
-/* line 82, ../../scss/_elements/_wagon.scss */
+/* line 79, ../../scss/_elements/_wagon.scss */
 #p_curve {
   height: 400px;
 }
 
-/* line 85, ../../scss/_elements/_wagon.scss */
+/* line 82, ../../scss/_elements/_wagon.scss */
 #p_curve .wagon {
   background-image: url("../img/vagn.png");
   background-repeat: no-repeat;
