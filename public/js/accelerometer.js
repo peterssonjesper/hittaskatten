@@ -29,6 +29,14 @@ var app = app || {};
 			neutralCallback = callback;
 		};
 
+		this.triggerRight = function() {
+			rightCallback();
+		};
+
+		this.triggerLeft = function() {
+			leftCallback();
+		};
+
 		var onMotion = function(event) {
 			x = event.accelerationIncludingGravity.x;  
 			y = event.accelerationIncludingGravity.y;  
