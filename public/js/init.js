@@ -42,7 +42,7 @@ $(document).ready(function () {
 	arrows.onRight(onRight);
 
 
-  signature.init(".signature");
+  signature.init(".signature", ".submitform-field");
 
 	var form = new app.Form();
 	form.init($("#submitform"),$("#submitform-thanks"));
