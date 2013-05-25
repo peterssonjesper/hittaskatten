@@ -901,24 +901,25 @@ a {
 .header, .header-large, .header-medium, .header-small {
   font-family: 'Cutive', serif;
   font-weight: bold;
+  text-align: center;
 }
 
-/* line 4, ../../scss/_elements/_general.scss */
+/* line 5, ../../scss/_elements/_general.scss */
 .header-large {
   font-size: 2.5em;
 }
 
-/* line 8, ../../scss/_elements/_general.scss */
+/* line 9, ../../scss/_elements/_general.scss */
 .header-medium {
   font-size: 2.5em;
 }
 
-/* line 12, ../../scss/_elements/_general.scss */
+/* line 13, ../../scss/_elements/_general.scss */
 .header-small {
   font-size: 1.125em;
 }
 
-/* line 17, ../../scss/_elements/_general.scss */
+/* line 18, ../../scss/_elements/_general.scss */
 .divider {
   display: block;
   height: 1px;
