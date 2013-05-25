@@ -997,12 +997,13 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Cutive', serif;
+  font-weight: bold;
   margin-top: 1rem;
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: .5rem;
+  padding-top: .8rem;
   border: none;
   border-bottom: .5rem solid #a12250;
   color: #fff;
-  font-weight: bold;
 }
 
 /* line 56, ../../scss/_elements/_form.scss */
