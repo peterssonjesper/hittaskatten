@@ -1,5 +1,3 @@
-var app = {};
-
 (function(app) {
 
 	app.Accelerometer = function() {
@@ -7,6 +5,9 @@ var app = {};
 		var leftCallback, rightCallback, neutralCallback;
 		var x = 0;
 		var lastX = 0;
+
+		var accelerometerShakeLimitLeftRight = app.config.accelerometerShakeLimitLeftRight || 5;
+		var accelerometerShakeLimitNeutral = app.config.accelerometerShakeLimitNeutral || 2;
 	
 		this.init = function() {
 			window.ondevicemotion = function(event) {  
@@ -44,32 +45,17 @@ var app = {};
 		};
 
 		var analyzeShakeLeft = function(x, lastX) {
-			return (x < lastX) && x < -5;
+			return x < -accelerometerShakeLimitLeftRight;
 		};
 
 		var analyzeShakeRight = function(x, lastX) {
-			return (x > lastX) && x > 5;
+			return x > accelerometerShakeLimitLeftRight;
 		};
 
 		var analyzeShakeNeutral = function(x, lastX) {
-			return Math.abs(x) <= 2;
+			return Math.abs(x) <= accelerometerShakeLimitNeutral;
 		};
 
 	};
 
 })(app);
-
-var acc = new app.Accelerometer();
-acc.init();
-
-acc.onLeft(function() {
-	document.getElementsByTagName('p')[0].innerHTML = "left!<br />";
-});
-
-acc.onRight(function() {
-	document.getElementsByTagName('p')[0].innerHTML = "right!<br />";
-});
-
-acc.onNeutral(function() {
-	document.getElementsByTagName('p')[0].innerHTML = "neutral!<br />";
-});
