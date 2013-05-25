@@ -3,7 +3,7 @@ var app = app || {};
 (function (app) {
 	var width = 
 	app.initializeSlider = function () {
-		var desktopPoints = [25, 250, 450, 0, -455, 0, 700, 50];
+		var desktopPoints = [25, 250, 450, 0, -455, 0, 850, 50];
 		var mobilePoints = [25, 25, 50, 200, 0, -250, 450, 350];
 		var windowWidth = window.innerWidth;
 
@@ -54,7 +54,7 @@ var app = app || {};
 
 
 		// test
-		$('#p_curve').height(380*zoomRatio);
+		$('#p_curve').height(500*zoomRatio);
 
 		// Add events
 		pathslider.bind('create.pathslider update.pathslider start.pathslider slide.pathslider change.pathslider stop.pathslider', function (e, s) {
@@ -89,8 +89,6 @@ var app = app || {};
 			//awsome
 			updateZambiaAndIsland('img/zambia-1.png', 'img/cayman-4.png');
 		}
-
-
 	}
 
 }(app))

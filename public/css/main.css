@@ -1324,3 +1324,246 @@ a {
     width: 100%;
   }
 }
+
+/* line 1, ../../scss/_elements/_wagon.scss */
+#slider-container {
+  position: relative;
+}
+
+/* line 5, ../../scss/_elements/_wagon.scss */
+.section-inner {
+  position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 9, ../../scss/_elements/_wagon.scss */
+  .slider-container {
+    *zoom: 1;
+  }
+  /* line 27, ../../scss/_lib/_grid.scss */
+  .slider-container:before, .slider-container:after {
+    content: "";
+    display: table;
+  }
+  /* line 31, ../../scss/_lib/_grid.scss */
+  .slider-container:after {
+    clear: both;
+  }
+
+  /* line 12, ../../scss/_elements/_wagon.scss */
+  .left-section {
+    float: left;
+    width: 50%;
+  }
+  /* line 15, ../../scss/_elements/_wagon.scss */
+  .left-section .section-inner {
+    margin-bottom: -1em;
+  }
+
+  /* line 19, ../../scss/_elements/_wagon.scss */
+  .right-section {
+    float: right;
+    width: 50%;
+  }
+  /* line 22, ../../scss/_elements/_wagon.scss */
+  .right-section .section-inner {
+    margin-top: -1em;
+  }
+
+  /* line 26, ../../scss/_elements/_wagon.scss */
+  .center-section {
+    clear: both;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 36, ../../scss/_elements/_wagon.scss */
+  .section-img {
+    width: 100%;
+    display: block;
+  }
+
+  /* line 40, ../../scss/_elements/_wagon.scss */
+  .section-left-img {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  /* line 48, ../../scss/_elements/_wagon.scss */
+  .left-section, .center-section, .right-section {
+    float: left;
+  }
+
+  /* line 52, ../../scss/_elements/_wagon.scss */
+  .left-section {
+    padding-top: 10%;
+    padding-left: 5%;
+    width: 20%;
+  }
+
+  /* line 58, ../../scss/_elements/_wagon.scss */
+  .right-section {
+    width: 20%;
+  }
+}
+/* line 65, ../../scss/_elements/_wagon.scss */
+.center-section {
+  width: 50%;
+}
+
+/* line 69, ../../scss/_elements/_wagon.scss */
+.center-section img {
+  width: 100%;
+}
+
+/* line 72, ../../scss/_elements/_wagon.scss */
+.right-section img {
+  width: 100%;
+}
+
+/* line 75, ../../scss/_elements/_wagon.scss */
+.left-section img {
+  width: 100%;
+}
+
+/* line 79, ../../scss/_elements/_wagon.scss */
+#railroad {
+  position: absolute;
+  top: 0;
+  background: url("../img/road.png") no-repeat;
+  background-size: 100%;
+}
+
+/* line 86, ../../scss/_elements/_wagon.scss */
+#p_curve {
+  height: 400px;
+}
+
+/* line 89, ../../scss/_elements/_wagon.scss */
+#p_curve .wagon {
+  background-image: url("../img/vagn.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center center;
+  border: none;
+  box-shadow: none;
+  width: 98px;
+  height: 102px;
+}
+
+/* set slider dimension here */
+/* line 2, ../../scss/_elements/_pathslider.scss */
+#slider {
+  width: 200px;
+  height: 200px;
+}
+
+/* Basic solid color slider grip */
+/* line 8, ../../scss/_elements/_pathslider.scss */
+.pathslider-grip {
+  width: 30px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ddd;
+  font-size: 1px;
+  z-index: 10;
+  cursor: move;
+  border: 1px solid;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.6);
+  /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.6);
+  /* FF3.5 - 3.6 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.6);
+  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+}
+
+/* grip hover/sliding state */
+/* line 28, ../../scss/_elements/_pathslider.scss */
+.pathslider-grip.sliding, .pathslider-grip:hover {
+  border-color: #8ce;
+  -webkit-box-shadow: 0 0 15px #8ce;
+  -moz-box-shadow: 0 0 15px #8ce;
+  box-shadow: 0 0 15px #8ce;
+}
+
+/* slider extra css - same as #slider above */
+/* line 36, ../../scss/_elements/_pathslider.scss */
+.pathslider {
+  position: relative;
+}
+
+/*************
+  grip styles
+  add these using the gripClass option
+ *************/
+/* shiny silver - sorta */
+/* line 45, ../../scss/_elements/_pathslider.scss */
+.silver {
+  border-color: #949494;
+  background-color: #ebebeb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0.5, #ebebeb), color-stop(0.5, #dbdbdb), to(#b5b5b5));
+  background-image: -webkit-linear-gradient(top, white 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, white 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(top, white 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
+  /* IE10 */
+  background-image: -o-linear-gradient(top, white 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
+}
+
+/* shiny black */
+/* line 57, ../../scss/_elements/_pathslider.scss */
+.black {
+  border-color: #000000;
+  background-color: #3b3b3b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a3a3), color-stop(0.5, #3b3b3b), color-stop(0.5, #242424), to(black));
+  background-image: -webkit-linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, black);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, black);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, black);
+  /* IE10 */
+  background-image: -o-linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, black);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, #000000);
+}
+
+/* Small circular chrome knob
+   including ".pathslider-grip" to remove border & box shadow
+ */
+/* line 71, ../../scss/_elements/_pathslider.scss */
+.pathslider-grip.chrome1 {
+  width: 18px;
+  height: 18px;
+  border: 0;
+  background: url(../images/chrome1.png) center center no-repeat;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+/* Large curvy chrome slide */
+/* line 85, ../../scss/_elements/_pathslider.scss */
+.pathslider-grip.chrome2 {
+  width: 57px;
+  height: 35px;
+  border: 0;
+  background: url(../images/chrome2.png) center center no-repeat;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
