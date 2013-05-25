@@ -54,7 +54,7 @@ var app = app || {};
 
 
 		// test
-		$('#p_curve').height(500*zoomRatio);
+		$('#p_curve').height(400*zoomRatio);
 
 		// Add events
 		pathslider.bind('create.pathslider update.pathslider start.pathslider slide.pathslider change.pathslider stop.pathslider', function (e, s) {
