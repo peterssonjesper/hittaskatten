@@ -8,11 +8,13 @@
 	@extend .arrow;
 	@include background(image-url('arrow-left.png'));
 	background-size: cover;
+	margin-right: 10px;
 }
 .right-arrow {
 	@extend .arrow;
 	@include background(image-url('arrow-right.png'));
 	background-size: cover;
+	margin-left: 10px;
 }
 
 .numbers-good-header,.numbers-good-header {
