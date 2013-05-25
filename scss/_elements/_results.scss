@@ -1,0 +1,15 @@
+.results-wrapper {
+	
+	@include clearfix();
+
+	.results-left {
+		float: left;
+	}
+
+	.results-right {
+		float: right;
+	}
+
+	margin-top: 1em;
+
+}
