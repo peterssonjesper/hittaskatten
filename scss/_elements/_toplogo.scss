@@ -1,0 +1,22 @@
+.top-logo {
+	background: #fff;
+	width: 170px;
+	left: 50%;
+	margin-left: -85px;
+	text-align: center;
+	padding: .7em .5em;
+	position: fixed;
+	z-index: 99999;
+	@include box-sizing("border-box");
+	@include single-box-shadow(#000, 0, 0, 20px, -5px);
+	@include border-bottom-left-radius(5px);
+	@include border-bottom-right-radius(5px);
+	@include media(mobile) {
+		width: 100px;
+		margin-left: -50px;
+		padding: .5em;
+		img {
+			width: 100%;
+		}
+	}
+}

@@ -2,7 +2,7 @@
 
 	app.Numbers = function() {
 
-		var total = 160;
+		var total = 90;
 		var numberOfChildrenThatCorrespondsToOneMillionSek = 500;
 		var numberOfSafesThatCorrespondsToOneMillionSek = 1.3;
 

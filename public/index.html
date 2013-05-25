@@ -17,6 +17,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Cutive' rel='stylesheet' type='text/css'>
 </head>
 <body>
+		<div class="top-logo">
+			<a href="http://www.actionaid.se/" target="_blank"><img src="img/logo.png" alt="Actionaid" /></a>
+		</div>
 		<img src="img/top-image.png" alt="Bakgrund" class="top-img">
 		<div class="outer">
 			<div class="inner">
@@ -48,7 +51,7 @@
 					<div class="numbers-good">
 						<h3 class="numbers-good-title">Zambia</h3>
 						<p>
-							<span class="zambia number"></span> miljoner
+							<span class="zambia number"></span> miljoner SEK
 						</p>
 					</div>
 					<div class="numbers-arrows nomobile">
@@ -61,7 +64,7 @@
 					<div class="numbers-bad">
 						<h3 class="numbers-bad-title">Cayman Islands</h3>
 						<p>
-							<span class="cayman number"></span> miljoner
+							<span class="cayman number"></span> miljoner SEK
 						</p>
 					</div>
 
@@ -80,7 +83,7 @@
 
 					<div class="results-wrapper spacing">
 						<div class="results-left">
-							<span class="number-of-children"></span> barn</span>
+							<span class="number-of-children"></span> barn i skolan</span>
 						</div>
 						<div class="results-right">
 							<span class="number-of-safes"></span> kassaskåp</span>
@@ -93,9 +96,30 @@
 			<div class="inner">
 				<section class="section">
 					<h2 class="header-medium">Tycker du att Zambia ska få ta del av skattevinsten?</h2>
+					<p>
+						När företag smiter från skatt innebär det inte bara mindre intäkter för regeringar, det innebär också sämre utbildning och sjukvård för befolkningen. Det är de fattiga som får betala priset! Vill du vara med och stoppa detta?
+					</p>
 					<div id="submitform-wrapper" class="submitform-wrapper">
 						<div id="submitform-thanks" class="submitform-thanks">Tack!</div>
 						<form id="submitform" class="submitform">
+              <svg class="signature" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="350px" height="150px" viewBox="0 0 350 150" enable-background="new 0 0 350 150" xml:space="preserve">
+                <style xmlns="http://www.w3.org/2000/svg">
+                  .signature-writing { 
+                    fill:none;
+                    stroke:hsl(0,0%,10%);
+                    stroke-width:4px;
+                    stroke-linecap:round;
+                  }
+                  .signature-line {
+                    stroke:hsl(0,0%,60%);
+                    stroke-width:4px;
+                    stroke-dasharray: 10,5;
+                  }
+                </style>
+
+                <path class="signature-line" d="M0,120 l350,0">
+              </svg>
 							<div class="submitform-inner">
 								<h3>Ta ställning!</h3>
 								<input type="text" placeholder="Namn" class="submitform-field" />
@@ -135,6 +159,7 @@
 	
 	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
 	<script src="js/jquery.pathslider.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<script src="js/top-padding.js"></script>
 
 	<script src="js/app.js"></script>
@@ -143,6 +168,7 @@
 	<script src="js/form.js"></script>
 	<script src="js/arrows.js"></script>
 	<script src="js/numbers.js"></script>
+	<script src="js/signature.js"></script>
 	<script src="js/init.js"></script>
 </body>
 
