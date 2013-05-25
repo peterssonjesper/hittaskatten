@@ -863,7 +863,7 @@ a {
 .inner {
   padding: 1em;
 }
-@media only screen and (min-width: em(768)) {
+@media only screen and (min-width: 768px) {
   /* line 17, ../../scss/_shared/_layout.scss */
   .inner {
     max-width: 60em;
@@ -880,6 +880,23 @@ a {
   left: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  /* line 33, ../../scss/_shared/_layout.scss */
+  .footer-text {
+    display: inline;
+    float: left;
+    width: 620px;
+    margin: 0 10px;
+  }
+
+  /* line 36, ../../scss/_shared/_layout.scss */
+  .footer-links {
+    display: inline;
+    float: left;
+    width: 300px;
+    margin: 0 10px;
+  }
+}
 /* line 1, ../../scss/_elements/_general.scss */
 .header, .header-large, .header-medium, .header-small {
   font-family: 'Cutive', serif;
@@ -906,7 +923,7 @@ a {
   position: relative;
   width: 90%;
 }
-@media only screen and (min-width: em(768)) {
+@media only screen and (min-width: 768px) {
   /* line 2, ../../scss/_elements/_form.scss */
   .submitform-wrapper {
     width: 21.875em;
@@ -1013,4 +1030,40 @@ a {
   position: absolute;
   bottom: .5rem;
   right: .5rem;
+}
+
+/* line 1, ../../scss/_elements/_footer.scss */
+.footer {
+  margin-top: 1em;
+}
+
+/* line 5, ../../scss/_elements/_footer.scss */
+.footer-links-item {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 8, ../../scss/_elements/_footer.scss */
+  .footer-links {
+    display: inline;
+    float: left;
+    width: 300px;
+    margin: 0 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 8, ../../scss/_elements/_footer.scss */
+  .footer-links {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 16, ../../scss/_elements/_footer.scss */
+  .footer-text {
+    display: inline;
+    float: left;
+    width: 620px;
+    margin: 0 10px;
+  }
 }

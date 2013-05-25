@@ -1,0 +1,20 @@
+.footer {
+	margin-top: 1em;
+}
+
+.footer-links-item {
+	display: block;
+}
+.footer-links {
+	@include media (tabletandabove) {
+		@include column(4);
+	}
+	@include media (mobile){
+		margin-top: 2rem;
+	}
+}
+.footer-text {
+	@include media (tabletandabove) {
+		@include column(8);
+	}
+}
