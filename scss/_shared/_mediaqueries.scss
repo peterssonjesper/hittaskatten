@@ -1,6 +1,6 @@
 // --------------------------------------------------
-// Denna fil gör det möjligt att skriva media queries inuti selectors
-// Exempel: http://mikefowler.me/thoughts/passing-content-to-mixins-in-sass/
+// Media queries inside selectors
+// Example: http://mikefowler.me/thoughts/passing-content-to-mixins-in-sass/
 // --------------------------------------------------
 
 @mixin media($type) {
