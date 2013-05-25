@@ -848,7 +848,7 @@ html, body {
 
 /* line 5, ../../scss/_pages/_layout.scss */
 body {
-  background: url('../img/bg-pattern.png?1369470065');
+  background: url('../img/bg-pattern.png?1369473950');
   color: white;
   position: relative;
 }
@@ -871,4 +871,26 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* line 1, ../../scss/_pages/_form.scss */
+#form-wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+/* line 4, ../../scss/_pages/_form.scss */
+#form-wrapper form {
+  width: 200px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+/* line 10, ../../scss/_pages/_form.scss */
+#form-wrapper #thanks {
+  line-height: 40px;
+  width: 200px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 0;
 }

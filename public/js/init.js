@@ -21,4 +21,11 @@ $(document).ready(function () {
 		pathSlider.setSlider(p);
 	});
 
+	var form = new app.Form();
+	form.init($("form"));
+	$("form").submit(function() {
+		form.close();
+		return false;
+	});
+
 });
