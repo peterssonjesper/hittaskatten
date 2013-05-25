@@ -1,6 +1,5 @@
 .submitform-wrapper {
 	position: relative;
-	width: 90%;
 	@include media(tabletandabove) {
 		width: em(350);
 		margin: 0 auto;
