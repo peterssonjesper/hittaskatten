@@ -4,7 +4,7 @@
 	left:500px;
 }
 
-.left, .center, .right {
+.left-section, .center-section, .right-section {
 	float: left;
 }
 
