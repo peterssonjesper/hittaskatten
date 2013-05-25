@@ -8,17 +8,19 @@ body {
 	position: relative;
 }
 
-// The outer box with the bg image
+// The outer box
 .outer {
-	@include background(image-url("top-image.png") no-repeat);
-	background-size: contain;
-	height: 100%;
-	padding-top: 20%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .inner {
 	padding: 1em;
-	@include media(desktop) {
-		max-width: em(960);
-		margin: 0 auto;
-	}
+}
+// The top image
+.top-img {
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
