@@ -840,3 +840,15 @@ body:before, body:after {
 body:after {
   clear: both;
 }
+
+/* line 1, ../../scss/_pages/_layout.scss */
+body {
+  background: url('../img/bg-pattern.png?1369470065');
+}
+
+/* line 4, ../../scss/_pages/_layout.scss */
+.top-header {
+  background: url('../img/top-image.png?1369468824') no-repeat;
+  background-size: cover;
+  padding-bottom: 49%;
+}
