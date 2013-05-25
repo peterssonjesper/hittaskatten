@@ -855,20 +855,20 @@ body {
 
 /* line 12, ../../scss/_pages/_layout.scss */
 .outer {
-  background: url('../img/top-image.png?1369468824') no-repeat;
-  background-size: contain;
-  height: 100%;
-  padding-top: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-/* line 18, ../../scss/_pages/_layout.scss */
+/* line 17, ../../scss/_pages/_layout.scss */
 .inner {
   padding: 1em;
 }
-@media only screen and (min-width: em(992)) {
-  /* line 18, ../../scss/_pages/_layout.scss */
-  .inner {
-    max-width: 60em;
-    margin: 0 auto;
-  }
+
+/* line 21, ../../scss/_pages/_layout.scss */
+.top-img {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

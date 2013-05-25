@@ -17,23 +17,26 @@
 	<link rel="stylesheet" href="css/pathslider.css">
 </head>
 <body>
-	<div class="outer">
-		<div class="inner">
-			<div class="demo">
-				<div id="p_curve" class="slider"></div>
+		<img src="img/top-image.png" alt="Bakgrund" class="top-img">
+		<div class="outer">
+			<div class="inner">
+				<div class="slider-container">
+					<div id="p_curve" class="slider"></div>
+				</div>
+				<p>Hello world!</p>
 			</div>
 		</div>
-	</div>
 	
 	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
 	<script src="js/jquery.pathslider.min.js"></script>
+	<script src="js/top-padding.js"></script>
 	<script>
 		$(function () {
 
 			$('#p_curve').pathslider({
 				gripClass: 'wagon',
 				rotateGrip: true,
-				useCanvas: true,
+				useCanvas: false,
 				curve: { width: 4, color: "#333", cap: "round" },
 				value: 50,
 				points: [25, 250, 150, 25, -125, 25, 275, 25],
