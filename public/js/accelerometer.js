@@ -1,4 +1,4 @@
-var app = {};
+var app = app || {};
 
 (function(app) {
 
@@ -59,17 +59,4 @@ var app = {};
 
 })(app);
 
-var acc = new app.Accelerometer();
-acc.init();
 
-acc.onLeft(function() {
-	document.getElementsByTagName('p')[0].innerHTML = "left!<br />";
-});
-
-acc.onRight(function() {
-	document.getElementsByTagName('p')[0].innerHTML = "right!<br />";
-});
-
-acc.onNeutral(function() {
-	document.getElementsByTagName('p')[0].innerHTML = "neutral!<br />";
-});

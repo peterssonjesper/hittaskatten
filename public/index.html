@@ -28,24 +28,27 @@
 	
 	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
 	<script src="js/jquery.pathslider.min.js"></script>
-	<script>
-		$(function () {
+	<script src="js/wagonslider.js"></script>
 
-			$('#p_curve').pathslider({
-				gripClass: 'wagon',
-				rotateGrip: true,
-				useCanvas: false,
-				curve: { width: 4, color: "#333", cap: "round" },
-				value: 50,
-				points: [25, 250, 150, 25, -125, 25, 275, 25],
-				dataPoints: 200,
-				tolerance: 3,
-				range: 30
-			});
-		});
-	</script>
 	<script src="js/accelerometer.js"></script>
+	<script>
+		var acc = new app.Accelerometer();
+		acc.init();
 
+		acc.onLeft(function () {
+			document.getElementsByTagName('p')[0].innerHTML = "left!<br />";
+		});
+
+		acc.onRight(function () {
+			document.getElementsByTagName('p')[0].innerHTML = "right!<br />";
+		});
+
+		acc.onNeutral(function () {
+			document.getElementsByTagName('p')[0].innerHTML = "neutral!<br />";
+		});
+
+		app.initializeSlider();
+	</script>
 </body>
 
 </html>
