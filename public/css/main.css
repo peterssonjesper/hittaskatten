@@ -895,7 +895,6 @@ a {
 /* line 9, ../../scss/_elements/_general.scss */
 .header-medium {
   font-size: 1.875em;
-  text-align: center;
 }
 
 /* line 13, ../../scss/_elements/_general.scss */
@@ -1102,12 +1101,18 @@ a {
 
 /* line 7, ../../scss/_elements/_arrows.scss */
 .left-arrow {
-  background: url('../img/arrow-left.png?1369487893');
+  background: url('../img/arrow-left.png?1369489626');
   background-size: cover;
 }
 
 /* line 12, ../../scss/_elements/_arrows.scss */
 .right-arrow {
-  background: url('../img/arrow-right.png?1369487902');
+  background: url('../img/arrow-right.png?1369489626');
   background-size: cover;
+}
+
+/* line 1, ../../scss/_elements/_header.scss */
+.big-fat-header {
+  max-width: 400px;
+  margin: 0 auto;
 }

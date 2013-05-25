@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 	var onLeft = function() {
 		var p = wagon.data('percent');
-		p = Math.max(p-2, -100);
+		p = Math.max(p-2, 0);
 		wagon.data('percent', p);
 		pathSlider.setSlider(p);
 	};
