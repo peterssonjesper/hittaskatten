@@ -36,7 +36,9 @@
 .tilt-text {
 	display: none;
 	text-align: center;
-	.hastilt & {
+}
+@include media(mobile) {
+	.hastilt .tilt-text {
 		display: block;
 	}
 }
