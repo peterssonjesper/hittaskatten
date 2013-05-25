@@ -848,7 +848,7 @@ html, body {
 
 /* line 5, ../../scss/_shared/_layout.scss */
 body {
-  background: url('../img/bg-pattern.png?1369473950');
+  background: url('../img/bg-pattern.png?1369470065');
   color: white;
   position: relative;
   font-family: 'Cutive', serif;
@@ -915,7 +915,6 @@ a {
 /* line 1, ../../scss/_elements/_form.scss */
 .submitform-wrapper {
   position: relative;
-  width: 90%;
 }
 @media only screen and (min-width: 768px) {
   /* line 1, ../../scss/_elements/_form.scss */
@@ -925,22 +924,22 @@ a {
   }
 }
 
-/* line 10, ../../scss/_elements/_form.scss */
+/* line 9, ../../scss/_elements/_form.scss */
 .submitform {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 16, ../../scss/_elements/_form.scss */
+/* line 15, ../../scss/_elements/_form.scss */
 .submitform-inner {
-  background: url('../img/bg-form.png?1369484788') repeat;
+  background: url('../img/bg-form.png?1369478589') repeat;
   padding: 2rem;
   position: relative;
   border-bottom: .5rem solid #606060;
 }
 
-/* line 23, ../../scss/_elements/_form.scss */
+/* line 22, ../../scss/_elements/_form.scss */
 .submitform-field {
   display: block;
   width: 100%;
@@ -958,7 +957,7 @@ a {
   padding: .5rem;
 }
 
-/* line 33, ../../scss/_elements/_form.scss */
+/* line 32, ../../scss/_elements/_form.scss */
 .submitform-thanks {
   line-height: 40px;
   width: 100%;
@@ -968,7 +967,7 @@ a {
   top: 0;
 }
 
-/* line 41, ../../scss/_elements/_form.scss */
+/* line 40, ../../scss/_elements/_form.scss */
 .submitform-submit {
   display: block;
   width: 100%;
@@ -991,7 +990,7 @@ a {
   color: #fff;
 }
 
-/* line 58, ../../scss/_elements/_form.scss */
+/* line 57, ../../scss/_elements/_form.scss */
 .bolt, .bolt-topleft, .bolt-topright, .bolt-bottomleft, .bolt-bottomright {
   width: 0.5rem;
   height: 0.5rem;
@@ -1003,28 +1002,28 @@ a {
   background: #555657;
 }
 
-/* line 64, ../../scss/_elements/_form.scss */
+/* line 63, ../../scss/_elements/_form.scss */
 .bolt-topleft {
   position: absolute;
   top: .5rem;
   left: .5rem;
 }
 
-/* line 70, ../../scss/_elements/_form.scss */
+/* line 69, ../../scss/_elements/_form.scss */
 .bolt-topright {
   position: absolute;
   top: .5rem;
   right: .5rem;
 }
 
-/* line 77, ../../scss/_elements/_form.scss */
+/* line 76, ../../scss/_elements/_form.scss */
 .bolt-bottomleft {
   position: absolute;
   bottom: .5rem;
   left: .5rem;
 }
 
-/* line 84, ../../scss/_elements/_form.scss */
+/* line 83, ../../scss/_elements/_form.scss */
 .bolt-bottomright {
   position: absolute;
   bottom: .5rem;
@@ -1110,13 +1109,13 @@ a {
 
 /* line 7, ../../scss/_elements/_numbers.scss */
 .left-arrow {
-  background: url('../img/arrow-left.png?1369489626');
+  background: url('../img/arrow-left.png?1369487893');
   background-size: cover;
 }
 
 /* line 12, ../../scss/_elements/_numbers.scss */
 .right-arrow {
-  background: url('../img/arrow-right.png?1369489626');
+  background: url('../img/arrow-right.png?1369487902');
   background-size: cover;
 }
 
