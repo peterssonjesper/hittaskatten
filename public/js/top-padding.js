@@ -14,7 +14,6 @@ var topPaddingFromLogoMethods = (function () {
         });
     }
     function addPadding($element){
-        console.log('adding padding');
         var imageHeight = $(selectors.image).height(),
         paddingTop = imageHeight / 1.5;
         $element.css('padding-top',paddingTop + 'px');
