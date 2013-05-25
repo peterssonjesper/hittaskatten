@@ -1,25 +1,48 @@
 #slider-container {
-	position: absolute;
-	top:500px;
-	left:500px;
+	position: relative;
+	
 }
 
 .left-section, .center-section, .right-section {
 	float: left;
 }
 
+.left-section {
+	padding-top:10%;
+	padding-left:5%;
+	width: 20%;
+}
+
+	.left-section img {
+		width:100%;
+	}
+
+.center-section {
+	width: 50%;
+}
+
+.right-section {
+	width: 20%;
+}
+
+#railroad {
+	position: absolute;
+	top:0;
+	background:  url('../img/road.png') no-repeat;
+	background-size: 100%;
+}
+
 #p_curve {
-		background:  url('../img/road.png') no-repeat;
-		background-position: 10px, 40px;
-		height: 352px;
-		width: 639px;
+	height: 200px;
 	}
 #p_curve .wagon{
 	background-image : url('../img/vagn.png');
 	background-repeat:no-repeat;
 	background-color: transparent;
+	background-position: center center;
 	border: none;
 	box-shadow: none;
 	width: 98px;
 	height: 102px;
 }
+
