@@ -1,4 +1,3 @@
-
 .submitform-wrapper {
 	position: relative;
 	width: 90%;
@@ -25,6 +24,7 @@
 	background: rgba(255,255,255,.8);
 	@include border-radius(.5rem);
 	@include box-sizing(border-box);
+	@include font-normal;
 	border: none;
 	padding: .5rem;
 }
@@ -42,8 +42,9 @@
 	background: #c4325e;
 	@include border-radius(.5rem);
 	@include box-sizing(border-box);
+	@include font-normal;
 	margin-top: 1rem;
-	padding: .5rem;
+	padding: 1.5rem 1rem 1rem 1rem;
 	border: none;
 	border-bottom: .5rem solid #a12250;
 	color: #fff;

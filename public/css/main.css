@@ -928,25 +928,25 @@ a {
   margin: 2em 0;
 }
 
-/* line 2, ../../scss/_elements/_form.scss */
+/* line 1, ../../scss/_elements/_form.scss */
 .submitform-wrapper {
   position: relative;
   width: 90%;
 }
 @media only screen and (min-width: 768px) {
-  /* line 2, ../../scss/_elements/_form.scss */
+  /* line 1, ../../scss/_elements/_form.scss */
   .submitform-wrapper {
     width: 21.875em;
     margin: 0 auto;
   }
 }
 
-/* line 11, ../../scss/_elements/_form.scss */
+/* line 10, ../../scss/_elements/_form.scss */
 .submitform {
   overflow: hidden;
 }
 
-/* line 15, ../../scss/_elements/_form.scss */
+/* line 14, ../../scss/_elements/_form.scss */
 .submitform-inner {
   background: url('../img/bg-form.png?1369478589') repeat;
   padding: 2rem;
@@ -954,7 +954,7 @@ a {
   border-bottom: .5rem solid #606060;
 }
 
-/* line 22, ../../scss/_elements/_form.scss */
+/* line 21, ../../scss/_elements/_form.scss */
 .submitform-field {
   display: block;
   width: 100%;
@@ -967,6 +967,7 @@ a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Cutive', serif;
   border: none;
   padding: .5rem;
 }
@@ -994,15 +995,16 @@ a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Cutive', serif;
   margin-top: 1rem;
-  padding: .5rem;
+  padding: 1.5rem 1rem 1rem 1rem;
   border: none;
   border-bottom: .5rem solid #a12250;
   color: #fff;
   font-weight: bold;
 }
 
-/* line 55, ../../scss/_elements/_form.scss */
+/* line 56, ../../scss/_elements/_form.scss */
 .bolt, .bolt-topleft, .bolt-topright, .bolt-bottomleft, .bolt-bottomright {
   width: 0.5rem;
   height: 0.5rem;
@@ -1014,28 +1016,28 @@ a {
   background: #555657;
 }
 
-/* line 61, ../../scss/_elements/_form.scss */
+/* line 62, ../../scss/_elements/_form.scss */
 .bolt-topleft {
   position: absolute;
   top: .5rem;
   left: .5rem;
 }
 
-/* line 67, ../../scss/_elements/_form.scss */
+/* line 68, ../../scss/_elements/_form.scss */
 .bolt-topright {
   position: absolute;
   top: .5rem;
   right: .5rem;
 }
 
-/* line 74, ../../scss/_elements/_form.scss */
+/* line 75, ../../scss/_elements/_form.scss */
 .bolt-bottomleft {
   position: absolute;
   bottom: .5rem;
   left: .5rem;
 }
 
-/* line 81, ../../scss/_elements/_form.scss */
+/* line 82, ../../scss/_elements/_form.scss */
 .bolt-bottomright {
   position: absolute;
   bottom: .5rem;
