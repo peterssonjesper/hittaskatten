@@ -1,6 +1,5 @@
 #slider-container {
 	position: relative;
-	
 }
 
 .left-section, .center-section, .right-section {
@@ -8,41 +7,49 @@
 }
 
 .left-section {
-	padding-top:10%;
-	padding-left:5%;
+	padding-top: 10%;
+	padding-left: 5%;
 	width: 20%;
 }
 
 	.left-section img {
-		width:100%;
+		width: 100%;
 	}
 
 .center-section {
 	width: 50%;
 }
 
+	.center-section img {
+		width: 100%;
+	}
+
 .right-section {
 	width: 20%;
 }
 
+	.right-section img {
+		width: 100%;
+	}
+
 #railroad {
 	position: absolute;
-	top:0;
-	background:  url('../img/road.png') no-repeat;
+	top: 0;
+	background: url('../img/road.png') no-repeat;
 	background-size: 100%;
 }
 
 #p_curve {
-	height: 200px;
-	}
-#p_curve .wagon{
-	background-image : url('../img/vagn.png');
-	background-repeat:no-repeat;
-	background-color: transparent;
-	background-position: center center;
-	border: none;
-	box-shadow: none;
-	width: 98px;
-	height: 102px;
+	height: 400px;
 }
 
+	#p_curve .wagon {
+		background-image: url('../img/vagn.png');
+		background-repeat: no-repeat;
+		background-color: transparent;
+		background-position: center center;
+		border: none;
+		box-shadow: none;
+		width: 98px;
+		height: 102px;
+	}
