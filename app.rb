@@ -8,6 +8,8 @@ require_relative 'api/controllers/signup_controller'
 set :views, File.dirname(__FILE__) + "/api/views"
 set :root, File.dirname(__FILE__)
 
+Rabl.register!
+
 configure do
   $logger = Logger.new(STDOUT)
 end
@@ -25,5 +27,5 @@ end
 
 def render_response(response)
   status response[:status]
-  rabl :message, locals: response
+  render :rabl, :message, locals: response
 end
