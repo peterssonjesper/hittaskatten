@@ -967,9 +967,10 @@ a {
   font-family: 'Cutive', serif;
   border: none;
   padding: .5rem;
+  margin-top: .5rem;
 }
 
-/* line 35, ../../scss/_elements/_form.scss */
+/* line 36, ../../scss/_elements/_form.scss */
 .submitform-thanks {
   line-height: 40px;
   width: 100%;
@@ -979,7 +980,7 @@ a {
   top: 0;
 }
 
-/* line 43, ../../scss/_elements/_form.scss */
+/* line 44, ../../scss/_elements/_form.scss */
 .submitform-submit {
   display: block;
   width: 100%;
@@ -1002,7 +1003,7 @@ a {
   color: #fff;
 }
 
-/* line 60, ../../scss/_elements/_form.scss */
+/* line 61, ../../scss/_elements/_form.scss */
 .bolt, .bolt-topleft, .bolt-topright, .bolt-bottomleft, .bolt-bottomright {
   width: 0.5rem;
   height: 0.5rem;
@@ -1014,28 +1015,28 @@ a {
   background: #555657;
 }
 
-/* line 66, ../../scss/_elements/_form.scss */
+/* line 67, ../../scss/_elements/_form.scss */
 .bolt-topleft {
   position: absolute;
   top: .5rem;
   left: .5rem;
 }
 
-/* line 72, ../../scss/_elements/_form.scss */
+/* line 73, ../../scss/_elements/_form.scss */
 .bolt-topright {
   position: absolute;
   top: .5rem;
   right: .5rem;
 }
 
-/* line 79, ../../scss/_elements/_form.scss */
+/* line 80, ../../scss/_elements/_form.scss */
 .bolt-bottomleft {
   position: absolute;
   bottom: .5rem;
   left: .5rem;
 }
 
-/* line 86, ../../scss/_elements/_form.scss */
+/* line 87, ../../scss/_elements/_form.scss */
 .bolt-bottomright {
   position: absolute;
   bottom: .5rem;
@@ -1104,6 +1105,21 @@ a {
     width: 56.25%;
     margin: 0 1.04167%;
   }
+}
+
+/* line 23, ../../scss/_elements/_footer.scss */
+.footer.logo {
+  background: #212427;
+  height: 80px;
+  line-height: 80px;
+}
+/* line 27, ../../scss/_elements/_footer.scss */
+.footer.logo .inner {
+  padding: 0;
+}
+/* line 29, ../../scss/_elements/_footer.scss */
+.footer.logo .inner img {
+  margin-left: 10px;
 }
 
 /* line 1, ../../scss/_elements/_header.scss */
