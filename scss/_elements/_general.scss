@@ -1,6 +1,9 @@
 .header {
 	@include font-header;
 	text-align: center;
+	&.align-left {
+		text-align: left;
+	}
 }
 .header-large {
 	@extend .header;
