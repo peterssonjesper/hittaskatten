@@ -7,6 +7,7 @@ require_relative 'api/controllers/signup_controller'
 
 set :views, File.dirname(__FILE__) + "/api/views"
 set :root, File.dirname(__FILE__)
+set :bind, '0.0.0.0'
 
 Rabl.register!
 
@@ -15,7 +16,7 @@ configure do
 end
 
 get '/' do
-  File.read(File.join('public/views', 'index.html'))
+  File.read(File.join('public', 'index.html'))
 end
 
 post '/api/signup' do

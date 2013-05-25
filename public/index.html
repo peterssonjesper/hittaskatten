@@ -17,14 +17,13 @@
 	<link rel="stylesheet" href="css/pathslider.css">
 </head>
 <body>
-	<header class="top-header" role="banner"></header>
-
 	<div class="outer">
-		<div id="slider-container">
-			<div id="p_curve" class="slider"></div>
+		<div class="inner">
+			<div class="slider-container">
+				<div id="p_curve" class="slider"></div>
+			</div>
+			<p>Hello world!</p>
 		</div>
-
-		<p>Hello world!</p>
 	</div>
 	
 	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
@@ -37,7 +36,7 @@
 				rotateGrip: true,
 				useCanvas: false,
 				curve: { width: 4, color: "#333", cap: "round" },
-				value: 0,
+				value: 50,
 				points: [25, 250, 150, 25, -125, 25, 275, 25],
 				dataPoints: 200,
 				tolerance: 3,
@@ -45,8 +44,8 @@
 			});
 		});
 	</script>
+	<script src="js/accelerometer.js"></script>
 
 </body>
 
 </html>
-
