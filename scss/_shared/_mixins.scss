@@ -32,6 +32,17 @@
 	@include box-shadow(.2em .2em 0.3em rgba(0,0,0,0.1));
 }
 
+@mixin clearfix-alt {
+	&:before,&:after {
+	content:"";
+	display:table;
+	}
+	&:after {
+	clear:both;
+	}
+	zoom:1;
+}
+
 // El buttton
 @mixin button {
 	cursor: pointer;

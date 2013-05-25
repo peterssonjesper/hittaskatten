@@ -1056,6 +1056,20 @@ a {
   margin-top: 1em;
 }
 
+/* line 19, ../../scss/_elements/_results.scss */
+.slider-container {
+  zoom: 1;
+}
+/* line 36, ../../scss/_shared/_mixins.scss */
+.slider-container:before, .slider-container:after {
+  content: "";
+  display: table;
+}
+/* line 40, ../../scss/_shared/_mixins.scss */
+.slider-container:after {
+  clear: both;
+}
+
 /* line 1, ../../scss/_elements/_footer.scss */
 .footer {
   margin-top: 1em;
