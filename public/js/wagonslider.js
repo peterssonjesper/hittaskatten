@@ -12,8 +12,8 @@ var app = app || {};
 		}
 
 		var scaledPoints = $.map(points, function (point) { return point * zoomRatio })
-		
-		$('#p_curve').pathslider({
+		var pathslider = $('#p_curve');
+		pathslider.pathslider({
 			gripClass: 'wagon',
 			rotateGrip: true,
 			useCanvas: true,
@@ -42,7 +42,43 @@ var app = app || {};
 		$railroad.height(railroadHeight * zoomRatio);
 		$railroad.width(railroadWidth * zoomRatio);
 
+		// Add events
+		pathslider.bind('create.pathslider update.pathslider start.pathslider slide.pathslider change.pathslider stop.pathslider', function (e, s) {
+			//$('body').append('<li>' + e.type + ' : ' + s.percent + '</li>');
+			imageUpdateDependingOnSlider(s.percent);
+		});
 	};
+
+	var updateSchoolAndIsland = function (schoolSrc, islandSrc) {
+		console.log('change img to ' + schoolSrc + ' and ' + islandSrc);
+		//$('#school').src(schoolSrc);
+		//$('#island').src(islandSrc);
+	}
+
+
+	var imageUpdateDependingOnSlider = function (sliderValue) {
+		if (0 < sliderValue && sliderValue <= 25) {
+			//disaster
+			updateSchoolAndIsland('img/school-1.png', 'img/island-1.png');
+		}
+
+		if (25 < sliderValue && sliderValue <= 50) {
+			//slum
+			updateSchoolAndIsland('img/school-2.png', 'img/island-2.png');
+		}
+
+		if (50 < sliderValue && sliderValue <= 75) {
+			//decent
+			updateSchoolAndIsland('img/school-3.png', 'img/island-3.png');
+		}
+
+		if (75 < sliderValue && sliderValue <= 100) {
+			//awsome
+			updateSchoolAndIsland('img/school-4.png', 'img/island-4.png');
+		}
+
+
+	}
 
 }(app))
 
