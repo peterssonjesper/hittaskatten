@@ -13,3 +13,12 @@
 	@extend .header;
 	font-size: em(18);
 }
+
+.divider {
+	display: block;
+	height: 1px;
+	width: 100%;
+	background: #737373;
+	border-top: 1px solid #595959;
+	margin: 2em 0;
+}

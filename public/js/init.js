@@ -47,4 +47,7 @@ $(document).ready(function () {
 		return false;
 	});
 
+	$('.outer').topPaddingFromLogo();
+
+
 });

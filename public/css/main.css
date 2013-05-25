@@ -918,6 +918,16 @@ a {
   font-size: 1.125em;
 }
 
+/* line 17, ../../scss/_elements/_general.scss */
+.divider {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #737373;
+  border-top: 1px solid #595959;
+  margin: 2em 0;
+}
+
 /* line 2, ../../scss/_elements/_form.scss */
 .submitform-wrapper {
   position: relative;
