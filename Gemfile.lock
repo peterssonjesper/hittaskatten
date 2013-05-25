@@ -1,7 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (3.2.13)
+      i18n (= 0.6.1)
+      multi_json (~> 1.0)
+    i18n (0.6.1)
     json (1.8.0)
+    multi_json (1.7.3)
+    rabl (0.8.4)
+      activesupport (>= 2.3.14)
     rack (1.5.2)
     sinatra (1.1.0)
       rack (~> 1.1)
@@ -13,4 +20,5 @@ PLATFORMS
 
 DEPENDENCIES
   json
+  rabl
   sinatra (= 1.1.0)
