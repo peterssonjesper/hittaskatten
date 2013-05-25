@@ -1,0 +1,15 @@
+.header {
+	@include font-header;
+}
+.header-large {
+	@extend .header;
+	font-size: em(40);
+}
+.header-medium {
+	@extend .header;
+	font-size: em(40);
+}
+.header-small {
+	@extend .header;
+	font-size: em(18);
+}

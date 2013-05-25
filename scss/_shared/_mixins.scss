@@ -23,6 +23,10 @@
 	font-weight: bold;
 }
 
+@mixin font-normal {
+	font-family: 'Cutive', serif;
+}
+
 // Some kind of drop shadow (could be removed)
 @mixin boxshadow {
 	@include box-shadow(.2em .2em 0.3em rgba(0,0,0,0.1));
