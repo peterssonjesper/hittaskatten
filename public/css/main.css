@@ -909,7 +909,7 @@ a {
   width: 100%;
   background: #737373;
   border-top: 1px solid #595959;
-  margin: 2em 0;
+  margin: 2em 0 0 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1072,15 +1072,16 @@ a {
 /* line 1, ../../scss/_elements/_footer.scss */
 .footer {
   margin-top: 1em;
+  overflow-y: auto;
 }
 
-/* line 5, ../../scss/_elements/_footer.scss */
+/* line 6, ../../scss/_elements/_footer.scss */
 .footer-links-item {
   display: block;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 8, ../../scss/_elements/_footer.scss */
+  /* line 9, ../../scss/_elements/_footer.scss */
   .footer-links {
     display: inline;
     float: left;
@@ -1090,14 +1091,14 @@ a {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 8, ../../scss/_elements/_footer.scss */
+  /* line 9, ../../scss/_elements/_footer.scss */
   .footer-links {
     margin-top: 2rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 17, ../../scss/_elements/_footer.scss */
+  /* line 18, ../../scss/_elements/_footer.scss */
   .footer-text {
     display: inline;
     float: left;
@@ -1108,7 +1109,7 @@ a {
 
 /* line 1, ../../scss/_elements/_header.scss */
 .big-fat-header {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
