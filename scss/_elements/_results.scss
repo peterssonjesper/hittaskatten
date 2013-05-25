@@ -15,3 +15,7 @@
 	}
 
 }
+
+.slider-container {
+	@include clearfix-alt;
+}
