@@ -52,6 +52,10 @@ var app = app || {};
 		$railroad.height(railroadHeight * zoomRatio);
 		$railroad.width(railroadWidth * zoomRatio);
 
+
+		// test
+		$('#p_curve').height(380*zoomRatio);
+
 		// Add events
 		pathslider.bind('create.pathslider update.pathslider start.pathslider slide.pathslider change.pathslider stop.pathslider', function (e, s) {
 			imageUpdateDependingOnSlider(s.percent);

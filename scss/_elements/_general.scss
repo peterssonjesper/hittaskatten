@@ -21,5 +21,11 @@
 	width: 100%;
 	background: #737373;
 	border-top: 1px solid #595959;
-	margin: 2em 0;
+	margin: 2em 0 0 0;
+}
+
+@include media(mobile) {
+	.nomobile {
+		display: none;
+	}
 }
