@@ -1300,9 +1300,15 @@ a {
 .top-logo {
   background: #fff;
   width: 170px;
-  margin: 0 auto;
+  left: 50%;
+  margin-left: -85px;
   text-align: center;
   padding: .7em .5em;
+  position: fixed;
+  z-index: 99999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-shadow: 0 0 20px -5px black;
   -moz-box-shadow: 0 0 20px -5px black;
   box-shadow: 0 0 20px -5px black;
@@ -1317,9 +1323,10 @@ a {
   /* line 1, ../../scss/_elements/_toplogo.scss */
   .top-logo {
     width: 100px;
+    margin-left: -50px;
     padding: .5em;
   }
-  /* line 13, ../../scss/_elements/_toplogo.scss */
+  /* line 18, ../../scss/_elements/_toplogo.scss */
   .top-logo img {
     width: 100%;
   }
