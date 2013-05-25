@@ -13,7 +13,7 @@ var app = app || {};
 		$('#p_curve').pathslider({
 			gripClass: 'wagon',
 			rotateGrip: true,
-			useCanvas: false,
+			useCanvas: true,
 			curve: { width: 4, color: "#333", cap: "round" },
 			value: 50,
 			points: scaledPoints,
