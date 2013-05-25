@@ -4,7 +4,7 @@ var app = app || {};
 	var width = 
 	app.initializeSlider = function () {
 		var desktopPoints = [25, 250, 450, 0, -455, 0, 700, 50];
-		var mobilePoints = [25, 350, 25, -175, 50, 175, 425, 50];
+		var mobilePoints = [25, 25, 50, 200, 0, -250, 450, 350];
 		var windowWidth = window.innerWidth;
 
 
