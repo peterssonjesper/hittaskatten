@@ -848,7 +848,7 @@ html, body {
 
 /* line 5, ../../scss/_shared/_layout.scss */
 body {
-  background: url('../img/bg-pattern.png?1369473950');
+  background: url('../img/bg-pattern.png?1369470065');
   color: white;
   position: relative;
   font-family: 'Cutive', serif;
@@ -959,7 +959,7 @@ a {
 
 /* line 18, ../../scss/_elements/_form.scss */
 .submitform-inner {
-  background: url('../img/bg-form.png?1369484788') repeat;
+  background: url('../img/bg-form.png?1369478589') repeat;
   padding: 2rem;
   position: relative;
   border-bottom: .5rem solid #606060;
@@ -1115,10 +1115,11 @@ a {
 /* line 6, ../../scss/_elements/_footer.scss */
 .footer-links-item {
   display: block;
+  margin-bottom: .5em;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 9, ../../scss/_elements/_footer.scss */
+  /* line 10, ../../scss/_elements/_footer.scss */
   .footer-links {
     display: inline;
     float: left;
@@ -1128,14 +1129,14 @@ a {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 9, ../../scss/_elements/_footer.scss */
+  /* line 10, ../../scss/_elements/_footer.scss */
   .footer-links {
     margin-top: 2rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 18, ../../scss/_elements/_footer.scss */
+  /* line 19, ../../scss/_elements/_footer.scss */
   .footer-text {
     display: inline;
     float: left;
@@ -1144,17 +1145,17 @@ a {
   }
 }
 
-/* line 23, ../../scss/_elements/_footer.scss */
+/* line 24, ../../scss/_elements/_footer.scss */
 .footer.logo {
   background: #212427;
   height: 80px;
   line-height: 80px;
 }
-/* line 27, ../../scss/_elements/_footer.scss */
+/* line 28, ../../scss/_elements/_footer.scss */
 .footer.logo .inner {
   padding: 0;
 }
-/* line 29, ../../scss/_elements/_footer.scss */
+/* line 30, ../../scss/_elements/_footer.scss */
 .footer.logo .inner img {
   margin-left: 10px;
 }
@@ -1175,13 +1176,13 @@ a {
 
 /* line 7, ../../scss/_elements/_numbers.scss */
 .left-arrow {
-  background: url('../img/arrow-left.png?1369489626');
+  background: url('../img/arrow-left.png?1369487893');
   background-size: cover;
 }
 
 /* line 12, ../../scss/_elements/_numbers.scss */
 .right-arrow {
-  background: url('../img/arrow-right.png?1369489626');
+  background: url('../img/arrow-right.png?1369487902');
   background-size: cover;
 }
 

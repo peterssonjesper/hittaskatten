@@ -5,6 +5,7 @@
 
 .footer-links-item {
 	display: block;
+	margin-bottom: .5em;
 }
 .footer-links {
 	@include media (tabletandabove) {
