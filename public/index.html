@@ -49,14 +49,20 @@
               <svg class="signature" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="350px" height="150px" viewBox="0 0 350 150" enable-background="new 0 0 350 150" xml:space="preserve">
                 <style xmlns="http://www.w3.org/2000/svg">
-    .signature-writing { 
-      fill:none;
-      stroke:#121212;
-      stroke-width:4px;
-      stroke-linecap:round;
-    }
-  </style>
+                  .signature-writing { 
+                    fill:none;
+                    stroke:hsl(0,0%,10%);
+                    stroke-width:4px;
+                    stroke-linecap:round;
+                  }
+                  .signature-line {
+                    stroke:hsl(0,0%,60%);
+                    stroke-width:4px;
+                    stroke-dasharray: 10,5;
+                  }
+                </style>
 
+                <path class="signature-line" d="M0,120 l350,0">
               </svg>
 							<div class="submitform-inner">
 								<input type="text" placeholder="Epost" class="submitform-field" />
