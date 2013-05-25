@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-	app.initializeSlider([25, 250, 150, 25, -125, 25, 275, 25]);
+	app.initializeSlider([25, 250, 450, 0, -455, 0, 630, 50]);
 	var acc = new app.Accelerometer();
 	acc.init();
 
