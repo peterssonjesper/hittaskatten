@@ -14,8 +14,10 @@ var app = app || {};
 			zoomRatio = 1;
 		}
 
+		var mobileMode = windowWidth > 700;
+
 		var points;
-		if (windowWidth > 700) {
+		if (mobileMode) {
 			points = desktopPoints;
 		}
 		else {
@@ -25,7 +27,7 @@ var app = app || {};
 		var pathslider = $('#p_curve');
 		pathslider.pathslider({
 			gripClass: 'wagon',
-			rotateGrip: true,
+			rotateGrip: mobileMode,
 			useCanvas: true,
 			curve: { width: 4, color: "#595959", cap: "round" },
 			value: 50,
@@ -43,14 +45,6 @@ var app = app || {};
 		var $wagon = $('.wagon');
 		$('.wagon').css('background-size', backgroundRatioInProcent + '%');
 
-		/* Manipulating the railroad */
-		var railroadHeight = 252;
-		var railroadWidth = 629;
-
-		
-		var $railroad = $('#railroad');
-		$railroad.height(railroadHeight * zoomRatio);
-		$railroad.width(railroadWidth * zoomRatio);
 
 
 		// test
