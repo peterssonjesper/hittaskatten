@@ -3,7 +3,7 @@
 	app.Numbers = function() {
 
 		var total = 90;
-		var numberOfChildrenThatCorrespondsToOneMillionSek = 500;
+		var numberOfChildrenThatCorrespondsToOneMillionSek = 533;
 		var numberOfSafesThatCorrespondsToOneMillionSek = 1.3;
 
 		this.init = function($element) {
