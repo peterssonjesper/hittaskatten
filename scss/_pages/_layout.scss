@@ -1,6 +1,19 @@
 body {
 	@include background(image-url("bg-pattern.png"));
+	color: $textcolor;
+	position: relative;
 }
+
+// The outer box with padding
+.outer {
+	padding: 1em;
+	@include media(desktop) {
+		max-width: em(960);
+		margin: 0 auto;
+	}
+}
+
+// page header (with image)
 .top-header {
 	@include background(image-url("top-image.png") no-repeat);
 	background-size: cover;

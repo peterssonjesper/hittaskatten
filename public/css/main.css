@@ -844,9 +844,23 @@ body:after {
 /* line 1, ../../scss/_pages/_layout.scss */
 body {
   background: url('../img/bg-pattern.png?1369470065');
+  color: white;
+  position: relative;
 }
 
-/* line 4, ../../scss/_pages/_layout.scss */
+/* line 8, ../../scss/_pages/_layout.scss */
+.outer {
+  padding: 1em;
+}
+@media only screen and (min-width: em(992)) {
+  /* line 8, ../../scss/_pages/_layout.scss */
+  .outer {
+    max-width: 60em;
+    margin: 0 auto;
+  }
+}
+
+/* line 17, ../../scss/_pages/_layout.scss */
 .top-header {
   background: url('../img/top-image.png?1369468824') no-repeat;
   background-size: cover;
