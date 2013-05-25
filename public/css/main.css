@@ -867,7 +867,7 @@ body {
 
 /* line 21, ../../scss/_pages/_layout.scss */
 .top-img {
-  max-width: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
