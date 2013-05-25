@@ -1,0 +1,49 @@
+// --------------------------------------------------
+// Denna fil innehåller så kallade "Mixins" som används för att modularisera CSS
+// Läs mer här: http://sass-lang.com/#mixins
+// --------------------------------------------------
+//
+
+// Mixin för att omvandla px till em (utgår från basen 16px per em)
+@function em($target, $context: 16) {
+    @return ($target / $context) * 1em;
+}
+
+// Vanlig dropshadow
+@mixin pm-boxshadow {
+	@include box-shadow(.2em .2em 0.3em rgba(0,0,0,0.1));
+}
+
+// Skugga inuti
+@mixin pm-boxshadow-inset {
+	@include box-shadow(inset .2em .2em 0.3em rgba(0,0,0,0.2));
+}
+
+
+// Transition
+@mixin transition3d ($duration: .25s) {
+	@include transition($duration ease-in-out);
+	@include transform(translate3d(0, 0, 0));
+}
+
+// Knappar
+@mixin button {
+	cursor: pointer;
+	text-decoration: none;
+	&:focus {
+		outline: 0;
+		border: 2px solid $pmcolor-orange-b;
+	}
+	&:active {
+		position: relative;
+		bottom: -1px;
+	}
+}
+
+// Mixin för bakgrundsbilder med svg-fallback
+@mixin bg-allformats($name) {
+	background: url('#{$imagepath}/#{$name}.png');
+	.svg & {
+		background-image: url('#{$imagepath}/svg/#{$name}.svg');
+	}
+}

@@ -1,0 +1,20 @@
+// --------------------------------------------------
+// This file imports 
+// --------------------------------------------------
+// Authors: Team Under Construction
+
+// Extern import
+@import "compass"; // Compass: http://compass-style.org/
+@import "_lib/normalize"; // HTML5 boilerplate  : http://html5boilerplate.com/
+@import "_lib/boilerplate.scss"; // HTML5 boilerplate  : http://html5boilerplate.com/
+@import "_lib/grid"; // Semantic.gs : http://semantic.gs
+
+// Import mixins
+@import "_shared/mediaqueries";
+@import "_shared/variables";
+@import "_shared/mixins";
+
+// Pages specific styles
+@import "_pages/layout";
+
+

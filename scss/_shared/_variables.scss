@@ -1,0 +1,20 @@
+// --------------------------------------------------
+// Denna fil innehåller variabler som kan användas av andra filer
+// Exempel på detta är färger som är generella för hela sajten.
+// --------------------------------------------------
+
+// Bildsökväg
+$imagepath: '../images';
+
+// Fontfamiljer
+$font-sans: 'Droid Sans', sans-serif;
+$font-script: 'Covered By Your Grace', cursive;
+
+// Inställningar
+$borderradius: .5em;
+$borderradius-inner: .4em;
+$borderradius-large: .7em;
+$textshadow: .2em .2em .2em rgba(0,0,0,.2);
+
+// Färger
+$textcolor: #333;
