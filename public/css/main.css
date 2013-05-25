@@ -840,3 +840,8 @@ body:before, body:after {
 body:after {
   clear: both;
 }
+
+/* line 1, ../../scss/_pages/_layout.scss */
+body {
+  background: url('../img/bg-pattern.png?1369470065');
+}
