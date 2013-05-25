@@ -7,6 +7,9 @@ var app = app || {};
 		var leftCallback, rightCallback, neutralCallback;
 		var x = 0;
 		var lastX = 0;
+
+		var accelerometerShakeLimitLeftRight = app.config.accelerometerShakeLimitLeftRight || 5;
+		var accelerometerShakeLimitNeutral = app.config.accelerometerShakeLimitNeutral || 2;
 	
 		this.init = function() {
 			window.ondevicemotion = function(event) {  
@@ -44,19 +47,17 @@ var app = app || {};
 		};
 
 		var analyzeShakeLeft = function(x, lastX) {
-			return (x < lastX) && x < -5;
+			return x < -accelerometerShakeLimitLeftRight;
 		};
 
 		var analyzeShakeRight = function(x, lastX) {
-			return (x > lastX) && x > 5;
+			return x > accelerometerShakeLimitLeftRight;
 		};
 
 		var analyzeShakeNeutral = function(x, lastX) {
-			return Math.abs(x) <= 2;
+			return Math.abs(x) <= accelerometerShakeLimitNeutral;
 		};
 
 	};
 
 })(app);
-
-

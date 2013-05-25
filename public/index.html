@@ -17,38 +17,25 @@
 	<link rel="stylesheet" href="css/pathslider.css">
 </head>
 <body>
-	<div class="outer">
-		<div class="inner">
-			<div class="slider-container">
-				<div id="p_curve" class="slider"></div>
+		<img src="img/top-image.png" alt="Bakgrund" class="top-img">
+		<div class="outer">
+			<div class="inner">
+				<div class="slider-container">
+					<div id="p_curve" class="slider"></div>
+				</div>
+				<p>Hello world!</p>
 			</div>
-			<p>Hello world!</p>
 		</div>
-	</div>
 	
 	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
 	<script src="js/jquery.pathslider.min.js"></script>
+	<script src="js/top-padding.js"></script>
 	<script src="js/wagonslider.js"></script>
 
+	<script src="js/app.js"></script>
 	<script src="js/accelerometer.js"></script>
-	<script>
-		var acc = new app.Accelerometer();
-		acc.init();
+	<script src="js/init.js"></script>
 
-		acc.onLeft(function () {
-			document.getElementsByTagName('p')[0].innerHTML = "left!<br />";
-		});
-
-		acc.onRight(function () {
-			document.getElementsByTagName('p')[0].innerHTML = "right!<br />";
-		});
-
-		acc.onNeutral(function () {
-			document.getElementsByTagName('p')[0].innerHTML = "neutral!<br />";
-		});
-
-		app.initializeSlider();
-	</script>
 </body>
 
 </html>
