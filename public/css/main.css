@@ -1046,6 +1046,8 @@ a {
 /* line 1, ../../scss/_elements/_results.scss */
 .results-wrapper {
   *zoom: 1;
+  text-align: center;
+  margin-top: 2em;
 }
 /* line 27, ../../scss/_lib/_grid.scss */
 .results-wrapper:before, .results-wrapper:after {
@@ -1056,20 +1058,27 @@ a {
 .results-wrapper:after {
   clear: both;
 }
-/* line 5, ../../scss/_elements/_results.scss */
+/* line 6, ../../scss/_elements/_results.scss */
 .results-wrapper .results-left {
   float: left;
+  margin-left: 10%;
+  width: 40%;
 }
-/* line 9, ../../scss/_elements/_results.scss */
+/* line 12, ../../scss/_elements/_results.scss */
 .results-wrapper .results-right {
   float: right;
+  margin-right: 10%;
+  width: 40%;
 }
-/* line 13, ../../scss/_elements/_results.scss */
-.results-wrapper.spacing {
-  margin-top: 1em;
+@media only screen and (max-width: 767px) {
+  /* line 21, ../../scss/_elements/_results.scss */
+  .results-wrapper .results-left, .results-wrapper .results-right {
+    width: 50%;
+    margin: 0;
+  }
 }
 
-/* line 19, ../../scss/_elements/_results.scss */
+/* line 29, ../../scss/_elements/_results.scss */
 .slider-container {
   zoom: 1;
 }

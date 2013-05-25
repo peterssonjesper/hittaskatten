@@ -1,17 +1,27 @@
 .results-wrapper {
 	
 	@include clearfix();
+	text-align: center;
 
 	.results-left {
 		float: left;
+		margin-left: 10%;
+		width: 40%;
 	}
 
 	.results-right {
 		float: right;
+		margin-right: 10%;
+		width: 40%;
 	}
 
-	&.spacing {
-		margin-top: 1em;
+	margin-top: 2em;
+
+	@include media(mobile) {
+		.results-left, .results-right {
+			width: 50%;
+			margin: 0;
+		}
 	}
 
 }
