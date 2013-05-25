@@ -7,12 +7,12 @@ var app = app || {};
 		var windowWidth = window.innerWidth;
 		var topImgWidth = 1312;
 		var zoomRatio = windowWidth / topImgWidth;
-		var scaledPoints = $.map(points, function (point) { return point * zoomRatio })
 		if (zoomRatio > 1) {
 			zoomRatio = 1;
 		}
 
-
+		var scaledPoints = $.map(points, function (point) { return point * zoomRatio })
+		
 		$('#p_curve').pathslider({
 			gripClass: 'wagon',
 			rotateGrip: true,
@@ -24,23 +24,25 @@ var app = app || {};
 			tolerance: 3,
 			range: 30
 		});
-
-		//set the zoom ration in percent, but make sure that it never is bigger than 100%
 		
 
 		/* Manipulating the wagon */
 		var wagonOriginalHeight = 98;
 		var wagonOriginalWidth = 102;
-		var wagonPercentageSize = zoomRatio * 100;
+		var backgroundRatioInProcent = zoomRatio * 100;
 		var $wagon = $('.wagon');
-		$wagon.height(wagonOriginalHeight * zoomRatio);
-		$wagon.width(wagonOriginalWidth * zoomRatio);
-		$('.wagon').css('background-size', wagonPercentageSize + '%');
+		//$wagon.height(wagonOriginalHeight * zoomRatio);
+		//$wagon.width(wagonOriginalWidth * zoomRatio);
+		$('.wagon').css('background-size', backgroundRatioInProcent + '%');
 
 		/* Manipulating the railroad */
-		$('#p_curve').css('background-size', wagonPercentageSize + '%');
-		
+		var railroadHeight = 252;
+		var railroadWidth = 629;
 
+		
+		var $railroad = $('#railroad');
+		$railroad.height(railroadHeight * zoomRatio);
+		$railroad.width(railroadWidth * zoomRatio);
 
 	};
 
