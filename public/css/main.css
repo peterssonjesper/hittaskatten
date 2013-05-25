@@ -1201,21 +1201,23 @@ a {
 .left-arrow {
   background: url('../img/arrow-left.png?1369489626');
   background-size: cover;
+  margin-right: 10px;
 }
 
-/* line 12, ../../scss/_elements/_numbers.scss */
+/* line 13, ../../scss/_elements/_numbers.scss */
 .right-arrow {
   background: url('../img/arrow-right.png?1369489626');
   background-size: cover;
+  margin-left: 10px;
 }
 
-/* line 18, ../../scss/_elements/_numbers.scss */
+/* line 20, ../../scss/_elements/_numbers.scss */
 .numbers-good-header, .numbers-good-header {
   font-family: 'Cutive', serif;
   font-weight: bold;
 }
 
-/* line 21, ../../scss/_elements/_numbers.scss */
+/* line 23, ../../scss/_elements/_numbers.scss */
 .numbers {
   *zoom: 1;
   position: relative;
@@ -1229,26 +1231,26 @@ a {
 .numbers:after {
   clear: both;
 }
-/* line 25, ../../scss/_elements/_numbers.scss */
+/* line 27, ../../scss/_elements/_numbers.scss */
 .numbers > h2 {
   margin-bottom: 0;
 }
-/* line 29, ../../scss/_elements/_numbers.scss */
+/* line 31, ../../scss/_elements/_numbers.scss */
 .numbers .numbers-good p, .numbers .numbers-bad p {
   font-size: 1.5em;
   margin: 0;
   color: #ebba0f;
 }
-/* line 34, ../../scss/_elements/_numbers.scss */
+/* line 36, ../../scss/_elements/_numbers.scss */
 .numbers .numbers-good h3, .numbers .numbers-bad h3 {
   font-size: 1em;
 }
-/* line 37, ../../scss/_elements/_numbers.scss */
+/* line 39, ../../scss/_elements/_numbers.scss */
 .numbers .numbers-good p, .numbers .numbers-good h3, .numbers .numbers-bad p, .numbers .numbers-bad h3 {
   text-align: center;
 }
 
-/* line 43, ../../scss/_elements/_numbers.scss */
+/* line 45, ../../scss/_elements/_numbers.scss */
 .numbers.light-background {
   background: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 1em;
@@ -1260,55 +1262,55 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 50, ../../scss/_elements/_numbers.scss */
+  /* line 52, ../../scss/_elements/_numbers.scss */
   .numbers-good {
     width: 40%;
     float: left;
   }
 
-  /* line 54, ../../scss/_elements/_numbers.scss */
+  /* line 56, ../../scss/_elements/_numbers.scss */
   .numbers-bad {
     width: 40%;
     float: right;
   }
 
-  /* line 58, ../../scss/_elements/_numbers.scss */
+  /* line 60, ../../scss/_elements/_numbers.scss */
   .numbers {
     padding: 1em;
   }
-  /* line 60, ../../scss/_elements/_numbers.scss */
+  /* line 62, ../../scss/_elements/_numbers.scss */
   .numbers .numbers-good p, .numbers .numbers-bad p {
     font-size: 1em;
   }
 
-  /* line 64, ../../scss/_elements/_numbers.scss */
+  /* line 66, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     position: absolute;
     bottom: .5em;
     left: 50%;
   }
 
-  /* line 69, ../../scss/_elements/_numbers.scss */
+  /* line 71, ../../scss/_elements/_numbers.scss */
   .numbers-arrows-inside {
     margin-left: -53.5px;
   }
 
-  /* line 72, ../../scss/_elements/_numbers.scss */
+  /* line 74, ../../scss/_elements/_numbers.scss */
   .numbers > h2 {
     margin-bottom: 1em;
   }
 
-  /* line 75, ../../scss/_elements/_numbers.scss */
+  /* line 77, ../../scss/_elements/_numbers.scss */
   .title {
     height: 3.5em;
   }
-  /* line 77, ../../scss/_elements/_numbers.scss */
+  /* line 79, ../../scss/_elements/_numbers.scss */
   .title .double-lineheight {
     line-height: 3.5em;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 85, ../../scss/_elements/_numbers.scss */
+  /* line 87, ../../scss/_elements/_numbers.scss */
   .numbers-good, .numbers-bad {
     display: inline;
     float: left;
@@ -1321,13 +1323,13 @@ a {
     padding-bottom: 1em;
   }
 
-  /* line 91, ../../scss/_elements/_numbers.scss */
+  /* line 93, ../../scss/_elements/_numbers.scss */
   .numbers-bad {
     text-align: right;
     padding-right: 1em;
   }
 
-  /* line 95, ../../scss/_elements/_numbers.scss */
+  /* line 97, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     display: inline;
     float: left;
@@ -1337,7 +1339,7 @@ a {
     text-align: center;
   }
 
-  /* line 100, ../../scss/_elements/_numbers.scss */
+  /* line 102, ../../scss/_elements/_numbers.scss */
   .numbers-good-title, .numbers-bad-title {
     font-size: 1.5em;
   }
