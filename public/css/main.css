@@ -842,27 +842,33 @@ body:after {
 }
 
 /* line 1, ../../scss/_pages/_layout.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../../scss/_pages/_layout.scss */
 body {
   background: url('../img/bg-pattern.png?1369470065');
   color: white;
   position: relative;
 }
 
-/* line 8, ../../scss/_pages/_layout.scss */
+/* line 12, ../../scss/_pages/_layout.scss */
 .outer {
+  background: url('../img/top-image.png?1369468824') no-repeat;
+  background-size: contain;
+  height: 100%;
+  padding-top: 20%;
+}
+
+/* line 18, ../../scss/_pages/_layout.scss */
+.inner {
   padding: 1em;
 }
 @media only screen and (min-width: em(992)) {
-  /* line 8, ../../scss/_pages/_layout.scss */
-  .outer {
+  /* line 18, ../../scss/_pages/_layout.scss */
+  .inner {
     max-width: 60em;
     margin: 0 auto;
   }
-}
-
-/* line 17, ../../scss/_pages/_layout.scss */
-.top-header {
-  background: url('../img/top-image.png?1369468824') no-repeat;
-  background-size: cover;
-  padding-bottom: 49%;
 }
