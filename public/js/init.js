@@ -4,6 +4,7 @@ $(document).ready(function () {
 	var form = new app.Form();
 	var numbers = new app.Numbers();
 	var arrows = new app.Arrows();
+	var signature = new app.Signature();
 
 	arrows.init($(".left-arrow"), $(".right-arrow"));
 
@@ -39,6 +40,9 @@ $(document).ready(function () {
 
 	arrows.onLeft(onLeft);
 	arrows.onRight(onRight);
+
+
+  signature.init(".signature");
 
 	var form = new app.Form();
 	form.init($("#submitform"),$("#submitform-thanks"));
