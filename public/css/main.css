@@ -1209,8 +1209,22 @@ a {
 .numbers > h2 {
   margin-bottom: 0;
 }
+/* line 29, ../../scss/_elements/_numbers.scss */
+.numbers .numbers-good p, .numbers .numbers-bad p {
+  font-size: 1.5em;
+  margin: 0;
+  color: #ebba0f;
+}
+/* line 34, ../../scss/_elements/_numbers.scss */
+.numbers .numbers-good h3, .numbers .numbers-bad h3 {
+  font-size: 1em;
+}
+/* line 37, ../../scss/_elements/_numbers.scss */
+.numbers .numbers-good p, .numbers .numbers-good h3, .numbers .numbers-bad p, .numbers .numbers-bad h3 {
+  text-align: center;
+}
 
-/* line 30, ../../scss/_elements/_numbers.scss */
+/* line 43, ../../scss/_elements/_numbers.scss */
 .numbers.light-background {
   background: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 1em;
@@ -1222,42 +1236,55 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 37, ../../scss/_elements/_numbers.scss */
+  /* line 50, ../../scss/_elements/_numbers.scss */
   .numbers-good {
     width: 40%;
     float: left;
   }
 
-  /* line 41, ../../scss/_elements/_numbers.scss */
+  /* line 54, ../../scss/_elements/_numbers.scss */
   .numbers-bad {
     width: 40%;
     float: right;
   }
 
-  /* line 45, ../../scss/_elements/_numbers.scss */
+  /* line 58, ../../scss/_elements/_numbers.scss */
   .numbers {
     padding: 1em;
   }
+  /* line 60, ../../scss/_elements/_numbers.scss */
+  .numbers .numbers-good p, .numbers .numbers-bad p {
+    font-size: 1em;
+  }
 
-  /* line 48, ../../scss/_elements/_numbers.scss */
+  /* line 64, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     position: absolute;
     bottom: .5em;
     left: 50%;
   }
 
-  /* line 53, ../../scss/_elements/_numbers.scss */
+  /* line 69, ../../scss/_elements/_numbers.scss */
   .numbers-arrows-inside {
     margin-left: -53.5px;
   }
 
-  /* line 56, ../../scss/_elements/_numbers.scss */
+  /* line 72, ../../scss/_elements/_numbers.scss */
   .numbers > h2 {
     margin-bottom: 1em;
   }
+
+  /* line 75, ../../scss/_elements/_numbers.scss */
+  .title {
+    height: 3.5em;
+  }
+  /* line 77, ../../scss/_elements/_numbers.scss */
+  .title .double-lineheight {
+    line-height: 3.5em;
+  }
 }
 @media only screen and (min-width: 768px) {
-  /* line 63, ../../scss/_elements/_numbers.scss */
+  /* line 85, ../../scss/_elements/_numbers.scss */
   .numbers-good, .numbers-bad {
     display: inline;
     float: left;
@@ -1270,13 +1297,13 @@ a {
     padding-bottom: 1em;
   }
 
-  /* line 69, ../../scss/_elements/_numbers.scss */
+  /* line 91, ../../scss/_elements/_numbers.scss */
   .numbers-bad {
     text-align: right;
     padding-right: 1em;
   }
 
-  /* line 73, ../../scss/_elements/_numbers.scss */
+  /* line 95, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     display: inline;
     float: left;
@@ -1286,24 +1313,9 @@ a {
     text-align: center;
   }
 
-  /* line 78, ../../scss/_elements/_numbers.scss */
+  /* line 100, ../../scss/_elements/_numbers.scss */
   .numbers-good-title, .numbers-bad-title {
     font-size: 1.5em;
-  }
-
-  /* line 82, ../../scss/_elements/_numbers.scss */
-  .numbers-good p, .numbers-bad p {
-    font-size: 1.5em;
-    margin: 0;
-    color: #ebba0f;
-  }
-  /* line 87, ../../scss/_elements/_numbers.scss */
-  .numbers-good h3, .numbers-bad h3 {
-    font-size: 1em;
-  }
-  /* line 90, ../../scss/_elements/_numbers.scss */
-  .numbers-good p, .numbers-good h3, .numbers-bad p, .numbers-bad h3 {
-    text-align: center;
   }
 }
 /* line 1, ../../scss/_elements/_toplogo.scss */

@@ -25,6 +25,19 @@
 	> h2 {
 		margin-bottom: 0;
 	}
+	.numbers-good, .numbers-bad {
+		p {
+			font-size: 1.5em;
+			margin: 0;
+			color: #ebba0f;
+		}
+		h3 {
+			font-size: 1em;
+		}
+		p, h3 {
+			text-align: center;
+		}
+	}
 }
 
 .numbers.light-background {
@@ -44,6 +57,9 @@
 	}
 	.numbers {
 		padding: 1em;
+		.numbers-good p, .numbers-bad p {
+			font-size: 1em;
+		}
 	}
 	.numbers-arrows {
 		position: absolute;
@@ -55,6 +71,12 @@
 	}
 	.numbers > h2 {
 		margin-bottom: 1em;
+	}
+	.title {
+		height: 3.5em;
+		.double-lineheight {
+			line-height: 3.5em;
+		}
 	}
 }
 
@@ -77,18 +99,5 @@
 	}
 	.numbers-good-title,.numbers-bad-title {
 		font-size: 1.5em;
-	}
-	.numbers-good, .numbers-bad {
-		p {
-			font-size: 1.5em;
-			margin: 0;
-			color: #ebba0f;
-		}
-		h3 {
-			font-size: 1em;
-		}
-		p, h3 {
-			text-align: center;
-		}
 	}
 }
