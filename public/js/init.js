@@ -18,5 +18,5 @@ $(document).ready(function () {
 
 
 	//slider
-	app.initializeSlider();
+	app.initializeSlider([25, 250, 150, 25, -125, 25, 275, 25]);
 });
