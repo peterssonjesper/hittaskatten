@@ -7,12 +7,14 @@
 		this.init = function($left, $right) {
 			this.$left = $left;
 			this.$right = $right;
-			this.$left.on('click', function() {
+			this.$left.on('click', function(e) {
 				triggerLeft();
+				e.preventDefault();
 			});
 
-			this.$right.on('click', function() {
+			this.$right.on('click', function(e) {
 				triggerRight();
+				e.preventDefault();
 			});
 
 			window.document.onkeydown = function(e) {

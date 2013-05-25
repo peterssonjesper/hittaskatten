@@ -1,5 +1,6 @@
 .header {
 	@include font-header;
+	text-align: center;
 }
 .header-large {
 	@extend .header;
