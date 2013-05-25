@@ -13,9 +13,11 @@
 @import "_shared/mediaqueries";
 @import "_shared/variables";
 @import "_shared/mixins";
+@import "_shared/layout";
 
 // Pages specific styles
-@import "_pages/layout";
-@import "_pages/form";
+@import "_elements/general";
+@import "_elements/form";
+@import "_elements/footer";
 
 

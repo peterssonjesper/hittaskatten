@@ -6,23 +6,34 @@ body {
 	@include background(image-url("bg-pattern.png"));
 	color: $textcolor;
 	position: relative;
+	@include font-normal;
 }
-
+a {
+	color: white;
+}
 
 
 // The outer box
-.outer {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
 .inner {
 	padding: 1em;
+	@include media(tabletandabove) {
+		max-width: em(960);
+		margin: 0 auto;
+	}
 }
 // The top image
 .top-img {
 	width: 100%;
+	z-index: -1;
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+@include media (tabletandabove) {
+	.footer-text {
+	@include column(8);
+	}
+	.footer-links {
+		@include column(4);
+	}
 }

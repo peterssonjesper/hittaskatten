@@ -4,10 +4,10 @@
 // --------------------------------------------------
 
 //Variables
-$mq-desktop-start: em(992);
-$mq-tablet-start: em(768);
-$mq-tablet-end: em(991);
-$mq-mobile-end: em(767);
+$mq-desktop-start: 992px;
+$mq-tablet-start: 768px;
+$mq-tablet-end: 991px;
+$mq-mobile-end: 767px;
 
 // The magic
 @mixin media($type) {

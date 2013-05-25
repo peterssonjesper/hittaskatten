@@ -1,0 +1,25 @@
+.header {
+	@include font-header;
+	text-align: center;
+}
+.header-large {
+	@extend .header;
+	font-size: em(40);
+}
+.header-medium {
+	@extend .header;
+	font-size: em(40);
+}
+.header-small {
+	@extend .header;
+	font-size: em(18);
+}
+
+.divider {
+	display: block;
+	height: 1px;
+	width: 100%;
+	background: #737373;
+	border-top: 1px solid #595959;
+	margin: 2em 0;
+}
