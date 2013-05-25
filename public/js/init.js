@@ -53,5 +53,9 @@ $(document).ready(function () {
 
 	$('.outer').topPaddingFromLogo();
 
+	if (window.DeviceOrientationEvent || window.OrientationEvent) {
+		$('html').addClass('hastilt');
+	}
+
 
 });
