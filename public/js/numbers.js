@@ -5,7 +5,6 @@
 		var total = 160;
 
 		this.init = function($element) {
-			this.$element = $element;
 			this.$zambia = $element.find(".zambia");
 			this.$cayman = $element.find(".cayman");
 		};

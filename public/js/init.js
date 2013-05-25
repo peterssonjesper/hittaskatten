@@ -3,6 +3,9 @@ $(document).ready(function () {
 	var acc = new app.Accelerometer();
 	var form = new app.Form();
 	var numbers = new app.Numbers();
+	var arrows = new app.Arrows();
+
+	arrows.init($(".left-arrow"), $(".right-arrow"));
 
 	numbers.init($(".numbers"));
 	numbers.update(50.0);
@@ -17,19 +20,25 @@ $(document).ready(function () {
 		numbers.update(p);
 	});
 
-	acc.onLeft(function() {
+	var onLeft = function() {
 		var p = wagon.data('percent');
 		p = Math.max(p-2, -100);
 		wagon.data('percent', p);
 		pathSlider.setSlider(p);
-	});
+	};
 
-	acc.onRight(function() {
+	var onRight = function() {
 		var p = wagon.data('percent');
 		p = Math.min(p+2, 100);
 		wagon.data('percent', p);
 		pathSlider.setSlider(p);
-	});
+	};
+
+	acc.onLeft(onLeft);
+	acc.onRight(onRight);
+
+	arrows.onLeft(onLeft);
+	arrows.onRight(onRight);
 
 	var form = new app.Form();
 	form.init($("#submitform"),$("#submitform-thanks"));
