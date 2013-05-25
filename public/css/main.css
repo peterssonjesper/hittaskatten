@@ -848,7 +848,7 @@ html, body {
 
 /* line 5, ../../scss/_shared/_layout.scss */
 body {
-  background: url('../img/bg-pattern.png?1369473950');
+  background: url('../img/bg-pattern.png?1369470065');
   color: white;
   position: relative;
   font-family: 'Cutive', serif;
@@ -895,7 +895,6 @@ a {
 /* line 9, ../../scss/_elements/_general.scss */
 .header-medium {
   font-size: 1.875em;
-  text-align: center;
 }
 
 /* line 13, ../../scss/_elements/_general.scss */
@@ -935,7 +934,7 @@ a {
 
 /* line 16, ../../scss/_elements/_form.scss */
 .submitform-inner {
-  background: url('../img/bg-form.png?1369484788') repeat;
+  background: url('../img/bg-form.png?1369478589') repeat;
   padding: 2rem;
   position: relative;
   border-bottom: .5rem solid #606060;
@@ -1090,6 +1089,12 @@ a {
     width: 56.25%;
     margin: 0 1.04167%;
   }
+}
+
+/* line 1, ../../scss/_elements/_header.scss */
+.big-fat-header {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 /* line 1, ../../scss/_elements/_numbers.scss */
