@@ -1,13 +1,33 @@
 /*
-Syntax error: Invalid CSS after "...ements/footer";": expected selector or at-rule, was "<<<<<<< HEAD"
+Syntax error: File to import not found or unreadable: _elements/arrows.
+              Load paths:
+                /Users/pajp/Repos/hittaskatten_her/scss
+                /usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                /usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets
+                Compass::SpriteImporter
         on line 23 of /Users/pajp/Repos/hittaskatten_her/scss/main.scss
 
 Backtrace:
 /Users/pajp/Repos/hittaskatten_her/scss/main.scss:23
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/scss/parser.rb:1148:in `expected'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/scss/parser.rb:1084:in `expected'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/scss/parser.rb:28:in `parse'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:342:in `_to_tree'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/import_node.rb:45:in `import'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
@@ -38,4 +58,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...ements/footer\";\": expected selector or at-rule, was \"<<<<<<< HEAD\"\A         on line 23 of /Users/pajp/Repos/hittaskatten_her/scss/main.scss"; }
+  content: "Syntax error: File to import not found or unreadable: _elements/arrows.\A               Load paths:\A                 /Users/pajp/Repos/hittaskatten_her/scss\A                 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 23 of /Users/pajp/Repos/hittaskatten_her/scss/main.scss"; }
