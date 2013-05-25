@@ -1,0 +1,63 @@
+.arrow {
+	width: (107/2) * 1px;
+	height: (82/2) * 1px;
+	display: inline-block;
+	text-decoration: none;
+}
+.left-arrow {
+	@extend .arrow;
+	@include background(image-url('arrow-left.png'));
+	background-size: cover;
+}
+.right-arrow {
+	@extend .arrow;
+	@include background(image-url('arrow-right.png'));
+	background-size: cover;
+}
+
+.numbers-good-header,.numbers-good-header {
+	@include font-header;
+}
+.numbers {
+	@include clearfix;
+	position: relative;
+	background: rgba(255,255,255,.2);
+	@include border-radius(1em);
+}
+
+@include media(mobile) {
+	.numbers-good {
+		width: 40%;
+		float: left;
+	}
+	.numbers-bad {
+		width: 40%;
+		float: right;
+	}
+	.numbers {
+		padding: 1em;
+		padding-bottom: 3em;
+	}
+	.numbers-arrows {
+		position: absolute;
+		bottom: .5em;
+		left: 50%;
+	}
+	.numbers-arrows-inside {
+		margin-left: (107/2) * -1px;
+	}
+}
+
+@include media(tabletandabove) {
+	
+	.numbers-good,.numbers-bad {
+		@include column(4);
+	}
+	.numbers-arrows {
+		@include column(4);
+		padding-top: 4em;
+	}
+	.numbers-good-title,.numbers-bad-title {
+		font-size: 2em;
+	}
+}
