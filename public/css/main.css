@@ -1448,6 +1448,7 @@ a {
 /* line 2, ../../scss/_elements/_pathslider.scss */
 .slider-container {
   zoom: 1;
+  position: relative;
 }
 /* line 36, ../../scss/_shared/_mixins.scss */
 .slider-container:before, .slider-container:after {
@@ -1459,118 +1460,23 @@ a {
   clear: both;
 }
 
-/* set slider dimension here */
-/* line 7, ../../scss/_elements/_pathslider.scss */
-#slider {
-  width: 200px;
-  height: 200px;
+/* line 6, ../../scss/_elements/_pathslider.scss */
+.slider-middle {
+  margin: 0 4em;
 }
 
-/* Basic solid color slider grip */
-/* line 13, ../../scss/_elements/_pathslider.scss */
-.pathslider-grip {
-  width: 30px;
-  height: 15px;
+/* line 9, ../../scss/_elements/_pathslider.scss */
+.slider-left {
+  width: 3em;
   position: absolute;
-  top: 0;
-  left: 0;
-  background: #ddd;
-  font-size: 1px;
-  z-index: 10;
-  cursor: move;
-  border: 1px solid;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.6);
-  /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.6);
-  /* FF3.5 - 3.6 */
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.6);
-  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+  top: .2em;
+  left: .2em;
 }
 
-/* grip hover/sliding state */
-/* line 33, ../../scss/_elements/_pathslider.scss */
-.pathslider-grip.sliding, .pathslider-grip:hover {
-  border-color: #8ce;
-  -webkit-box-shadow: 0 0 15px #8ce;
-  -moz-box-shadow: 0 0 15px #8ce;
-  box-shadow: 0 0 15px #8ce;
-}
-
-/* slider extra css - same as #slider above */
-/* line 41, ../../scss/_elements/_pathslider.scss */
-.pathslider {
-  position: relative;
-}
-
-/*************
-  grip styles
-  add these using the gripClass option
- *************/
-/* shiny silver - sorta */
-/* line 50, ../../scss/_elements/_pathslider.scss */
-.silver {
-  border-color: #949494;
-  background-color: #ebebeb;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0.5, #ebebeb), color-stop(0.5, #dbdbdb), to(#b5b5b5));
-  background-image: -webkit-linear-gradient(top, white 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
-  /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(top, white 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(top, white 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
-  /* IE10 */
-  background-image: -o-linear-gradient(top, white 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
-  /* Opera 11.10+ */
-  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
-}
-
-/* shiny black */
-/* line 62, ../../scss/_elements/_pathslider.scss */
-.black {
-  border-color: #000000;
-  background-color: #3b3b3b;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a3a3), color-stop(0.5, #3b3b3b), color-stop(0.5, #242424), to(black));
-  background-image: -webkit-linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, black);
-  /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, black);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, black);
-  /* IE10 */
-  background-image: -o-linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, black);
-  /* Opera 11.10+ */
-  background-image: linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, #000000);
-}
-
-/* Small circular chrome knob
-   including ".pathslider-grip" to remove border & box shadow
- */
-/* line 76, ../../scss/_elements/_pathslider.scss */
-.pathslider-grip.chrome1 {
-  width: 18px;
-  height: 18px;
-  border: 0;
-  background: url(../images/chrome1.png) center center no-repeat;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: 0 0 0;
-  -moz-box-shadow: 0 0 0;
-  box-shadow: 0 0 0;
-}
-
-/* Large curvy chrome slide */
-/* line 90, ../../scss/_elements/_pathslider.scss */
-.pathslider-grip.chrome2 {
-  width: 57px;
-  height: 35px;
-  border: 0;
-  background: url(../images/chrome2.png) center center no-repeat;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: 0 0 0;
-  -moz-box-shadow: 0 0 0;
-  box-shadow: 0 0 0;
+/* line 15, ../../scss/_elements/_pathslider.scss */
+.slider-right {
+  width: 3em;
+  position: absolute;
+  top: .2em;
+  right: .2em;
 }
