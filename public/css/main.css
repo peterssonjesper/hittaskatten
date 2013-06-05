@@ -952,14 +952,14 @@ a {
   }
 }
 
-/* line 12, ../../scss/_elements/_form.scss */
+/* line 13, ../../scss/_elements/_form.scss */
 .submitform {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 18, ../../scss/_elements/_form.scss */
+/* line 19, ../../scss/_elements/_form.scss */
 .submitform-inner {
   background: url('../img/bg-form.png?1369478589') repeat;
   padding: 2rem;
@@ -967,7 +967,7 @@ a {
   border-bottom: .5rem solid #606060;
 }
 
-/* line 25, ../../scss/_elements/_form.scss */
+/* line 26, ../../scss/_elements/_form.scss */
 .submitform-field {
   display: block;
   width: 100%;
@@ -987,7 +987,7 @@ a {
   line-height: 1.5rem;
 }
 
-/* line 37, ../../scss/_elements/_form.scss */
+/* line 38, ../../scss/_elements/_form.scss */
 .submitform-thanks {
   line-height: 40px;
   width: 100%;
@@ -997,14 +997,16 @@ a {
   height: 0;
   overflow: hidden;
 }
+
+/* line 47, ../../scss/_elements/_form.scss */
 #submitform-share {
-	position: relative;
-	height: 0;
-	overflow: hidden;
-	text-align: center;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
 }
 
-/* line 45, ../../scss/_elements/_form.scss */
+/* line 53, ../../scss/_elements/_form.scss */
 .submitform-submit {
   display: block;
   width: 100%;
@@ -1030,12 +1032,12 @@ a {
   border-bottom: .3rem solid #a12250;
   color: #fff;
 }
-/* line 59, ../../scss/_elements/_form.scss */
+/* line 67, ../../scss/_elements/_form.scss */
 .submitform-submit:hover {
   background: #db4f79;
 }
 
-/* line 66, ../../scss/_elements/_form.scss */
+/* line 74, ../../scss/_elements/_form.scss */
 .bolt, .bolt-topleft, .bolt-topright, .bolt-bottomleft, .bolt-bottomright {
   width: 0.5rem;
   height: 0.5rem;
@@ -1047,28 +1049,28 @@ a {
   background: #555657;
 }
 
-/* line 72, ../../scss/_elements/_form.scss */
+/* line 80, ../../scss/_elements/_form.scss */
 .bolt-topleft {
   position: absolute;
   top: .5rem;
   left: .5rem;
 }
 
-/* line 78, ../../scss/_elements/_form.scss */
+/* line 86, ../../scss/_elements/_form.scss */
 .bolt-topright {
   position: absolute;
   top: .5rem;
   right: .5rem;
 }
 
-/* line 85, ../../scss/_elements/_form.scss */
+/* line 93, ../../scss/_elements/_form.scss */
 .bolt-bottomleft {
   position: absolute;
   bottom: .5rem;
   left: .5rem;
 }
 
-/* line 92, ../../scss/_elements/_form.scss */
+/* line 100, ../../scss/_elements/_form.scss */
 .bolt-bottomright {
   position: absolute;
   bottom: .5rem;
@@ -1210,6 +1212,11 @@ a {
 .big-fat-header {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* line 5, ../../scss/_elements/_header.scss */
+.header-instructions {
+  text-align: center;
 }
 
 /* line 1, ../../scss/_elements/_numbers.scss */
