@@ -1352,100 +1352,7 @@ a {
   }
 }
 
-/* line 1, ../../scss/_elements/_wagon.scss */
-#slider-container {
-  position: relative;
-}
-
-/* line 5, ../../scss/_elements/_wagon.scss */
-.section-inner {
-  position: relative;
-}
-
-/* line 9, ../../scss/_elements/_wagon.scss */
-.section-img {
-  margin: 0 auto;
-}
-
-@media only screen and (max-width: 767px) {
-  /* line 13, ../../scss/_elements/_wagon.scss */
-  .slider-container {
-    *zoom: 1;
-  }
-  /* line 27, ../../scss/_lib/_grid.scss */
-  .slider-container:before, .slider-container:after {
-    content: "";
-    display: table;
-  }
-  /* line 31, ../../scss/_lib/_grid.scss */
-  .slider-container:after {
-    clear: both;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 18, ../../scss/_elements/_wagon.scss */
-  .section-img {
-    display: block;
-  }
-
-  /* line 22, ../../scss/_elements/_wagon.scss */
-  .left-section {
-    padding-top: 10%;
-    padding-left: 5%;
-    width: 20%;
-  }
-
-  /* line 28, ../../scss/_elements/_wagon.scss */
-  .right-section {
-    width: 20%;
-  }
-}
-/* line 34, ../../scss/_elements/_wagon.scss */
-.center-section {
-  width: 50%;
-}
-
-/* line 38, ../../scss/_elements/_wagon.scss */
-.center-section img {
-  width: 100%;
-}
-
-/* line 41, ../../scss/_elements/_wagon.scss */
-.right-section img {
-  width: 100%;
-}
-
-/* line 44, ../../scss/_elements/_wagon.scss */
-.left-section img {
-  width: 100%;
-}
-
-/* line 48, ../../scss/_elements/_wagon.scss */
-#railroad {
-  position: absolute;
-  top: 0;
-  background: url("../img/road.png") no-repeat;
-  background-size: 100%;
-}
-
-/* line 55, ../../scss/_elements/_wagon.scss */
-#p_curve {
-  height: 400px;
-}
-
-/* line 58, ../../scss/_elements/_wagon.scss */
-#p_curve .wagon {
-  background-image: url("../img/vagn.png");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-position: center center;
-  border: none;
-  box-shadow: none;
-  width: 98px;
-  height: 102px;
-}
-
-/* line 2, ../../scss/_elements/_pathslider.scss */
+/* line 2, ../../scss/_elements/_slajder.scss */
 .slider-container {
   zoom: 1;
   position: relative;
@@ -1460,12 +1367,12 @@ a {
   clear: both;
 }
 
-/* line 6, ../../scss/_elements/_pathslider.scss */
+/* line 6, ../../scss/_elements/_slajder.scss */
 .slider-middle {
   margin: 0 4em;
 }
 
-/* line 9, ../../scss/_elements/_pathslider.scss */
+/* line 9, ../../scss/_elements/_slajder.scss */
 .slider-left {
   width: 3em;
   position: absolute;
@@ -1473,7 +1380,7 @@ a {
   left: .2em;
 }
 
-/* line 15, ../../scss/_elements/_pathslider.scss */
+/* line 15, ../../scss/_elements/_slajder.scss */
 .slider-right {
   width: 3em;
   position: absolute;
