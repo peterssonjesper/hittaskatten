@@ -35,12 +35,19 @@
 	line-height: 1.5rem;
 }
 .submitform-thanks {
-  line-height: 40px;
-  width: 100%;
-  text-align: center;
-  display: none;
-  position: absolute;
-  top: 0;
+	line-height: 40px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 0;
+	height: 0;
+	overflow: hidden;
+}
+#submitform-share {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	text-align: center;
 }
 .submitform-submit {
 	display: block;

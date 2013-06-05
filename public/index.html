@@ -85,7 +85,6 @@
 					När företag smiter från skatt innebär det inte bara mindre intäkter för regeringar, det innebär också sämre utbildning och sjukvård för befolkningen. Det är de fattiga som får betala priset!
 				</p>
 				<div id="submitform-wrapper" class="submitform-wrapper">
-					<div id="submitform-thanks" class="submitform-thanks">Tack!</div>
 					<form id="submitform" class="submitform">
 						<svg class="signature" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						width="350px" height="150px" viewBox="0 0 350 150" enable-background="new 0 0 350 150" xml:space="preserve">
@@ -116,6 +115,14 @@
 							<i class="bolt-bottomright"></i>
 						</div>
 					</form>
+					<div id="submitform-thanks" class="submitform-thanks">
+						Tack!
+					</div>
+					<div id="submitform-share">
+						<br />
+						<a href="https://twitter.com/intent/tweet?button_hashtag=skatteflykt&text=Vem%20tycker%20du%20ska%20f%C3%A5%20skatten%3F" class="twitter-hashtag-button" data-lang="sv" data-related="ActionAidSweden" data-url="http://hittaskatten.herokuapp.com/">Tweet #skatteflykt</a>
+						<div class="fb-like" data-href="http://hittaskatten.herokuapp.com/" data-send="false" data-width="450" data-show-faces="false"></div>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -139,6 +146,8 @@
 		</footer>
 	</div>
 
+	<div id="fb-root"></div>
+
 	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
 	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
 	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -151,6 +160,15 @@
 	<script src="js/numbers.js"></script>
 	<script src="js/signature.js"></script>
 	<script src="js/init.js"></script>
+
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/sv_SE/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 

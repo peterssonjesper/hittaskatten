@@ -992,9 +992,16 @@ a {
   line-height: 40px;
   width: 100%;
   text-align: center;
-  display: none;
-  position: absolute;
+  position: relative;
   top: 0;
+  height: 0;
+  overflow: hidden;
+}
+#submitform-share {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	text-align: center;
 }
 
 /* line 45, ../../scss/_elements/_form.scss */
