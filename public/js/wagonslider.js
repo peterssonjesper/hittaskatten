@@ -27,7 +27,6 @@ var app = app || {};
 	};
 
 	var updateZambiaAndIsland = function (schoolSrc, islandSrc) {
-		console.log('change img to ' + schoolSrc + ' and ' + islandSrc);
 		$('#zambia').attr('src',schoolSrc);
 		$('#cayman').attr('src',islandSrc);
 	};
