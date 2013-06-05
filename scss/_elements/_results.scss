@@ -13,32 +13,34 @@
 	@include border-radius(1em);
 	padding: 1em;
 }
+.results-text {
+	margin-top: 1em;
+}
 .results-wrapper {
 	
 	@include clearfix();
 	text-align: center;
-
-	.results-left {
-		float: left;
-		margin-left: 10%;
-		width: 40%;
-	}
-
-	.results-right {
-		float: right;
-		margin-right: 10%;
-		width: 40%;
-		&.safe {
-			padding-top: 20px;
-		}
-	}
-
 	margin-top: 2em;
 
+	@include media(tabletandabove) {
+		.results-left {
+			float: left;
+			margin-left: 10%;
+			width: 40%;
+		}
+
+		.results-right {
+			float: right;
+			margin-right: 10%;
+			width: 40%;
+			&.safe {
+				padding-top: 20px;
+			}
+		}
+	}
 	@include media(mobile) {
-		.results-left, .results-right {
-			width: 50%;
-			margin: 0;
+		.results-right {
+			margin-top: 1em;
 		}
 	}
 

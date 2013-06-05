@@ -1093,6 +1093,11 @@ a {
 }
 
 /* line 16, ../../scss/_elements/_results.scss */
+.results-text {
+  margin-top: 1em;
+}
+
+/* line 19, ../../scss/_elements/_results.scss */
 .results-wrapper {
   *zoom: 1;
   text-align: center;
@@ -1107,27 +1112,28 @@ a {
 .results-wrapper:after {
   clear: both;
 }
-/* line 21, ../../scss/_elements/_results.scss */
-.results-wrapper .results-left {
-  float: left;
-  margin-left: 10%;
-  width: 40%;
-}
-/* line 27, ../../scss/_elements/_results.scss */
-.results-wrapper .results-right {
-  float: right;
-  margin-right: 10%;
-  width: 40%;
-}
-/* line 31, ../../scss/_elements/_results.scss */
-.results-wrapper .results-right.safe {
-  padding-top: 20px;
+@media only screen and (min-width: 768px) {
+  /* line 26, ../../scss/_elements/_results.scss */
+  .results-wrapper .results-left {
+    float: left;
+    margin-left: 10%;
+    width: 40%;
+  }
+  /* line 32, ../../scss/_elements/_results.scss */
+  .results-wrapper .results-right {
+    float: right;
+    margin-right: 10%;
+    width: 40%;
+  }
+  /* line 36, ../../scss/_elements/_results.scss */
+  .results-wrapper .results-right.safe {
+    padding-top: 20px;
+  }
 }
 @media only screen and (max-width: 767px) {
-  /* line 39, ../../scss/_elements/_results.scss */
-  .results-wrapper .results-left, .results-wrapper .results-right {
-    width: 50%;
-    margin: 0;
+  /* line 42, ../../scss/_elements/_results.scss */
+  .results-wrapper .results-right {
+    margin-top: 1em;
   }
 }
 
