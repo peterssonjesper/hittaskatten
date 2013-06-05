@@ -11,36 +11,27 @@ $(document).ready(function () {
 	numbers.init($(".numbers"));
 	numbers.update(50.0);
 
-	app.initializeSlider();
+	var slider = new app.Slider($(".slider"), function(value) {
+		numbers.update(value);
+	});
 	acc.init();
 
-	var wagon = $('#p_curve .wagon');
-	var pathSlider = $('#p_curve').getpathslider();
-	pathSlider.$el.on('change.pathslider', function() {
-		var p = parseFloat(wagon.attr('data-percent'));
-		numbers.update(p);
-	});
-
 	var onLeft = function() {
-		var p = wagon.data('percent');
-		p = Math.max(p-2, 0);
-		wagon.data('percent', p);
-		pathSlider.setSlider(p);
+	  var value = slider.value();
+		value = Math.max(value-15, 0);
+		slider.setValue(value);
+		numbers.update(value);
 	};
 
 	var onRight = function() {
-		var p = wagon.data('percent');
-		p = Math.min(p+2, 100);
-		wagon.data('percent', p);
-		pathSlider.setSlider(p);
+    var value = slider.value();
+		value = Math.min(value+15, 100);
+		slider.setValue(value);
+		numbers.update(value);
 	};
-
-	acc.onLeft(onLeft);
-	acc.onRight(onRight);
 
 	arrows.onLeft(onLeft);
 	arrows.onRight(onRight);
-
 
   signature.init(".signature", ".submitform-field");
 
