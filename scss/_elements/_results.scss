@@ -1,4 +1,13 @@
 
+.section-img {
+	max-width: 70%;
+	display: block;
+	margin: 0 auto;
+	@include media(tabletandabove) {
+		max-width: 30%;
+	}
+}
+
 .results-box {
 	background: rgba(255,255,255,.2);
 	@include border-radius(1em);

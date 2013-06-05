@@ -1069,6 +1069,19 @@ a {
 }
 
 /* line 2, ../../scss/_elements/_results.scss */
+.section-img {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  /* line 2, ../../scss/_elements/_results.scss */
+  .section-img {
+    max-width: 30%;
+  }
+}
+
+/* line 11, ../../scss/_elements/_results.scss */
 .results-box {
   background: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 1em;
@@ -1079,7 +1092,7 @@ a {
   padding: 1em;
 }
 
-/* line 7, ../../scss/_elements/_results.scss */
+/* line 16, ../../scss/_elements/_results.scss */
 .results-wrapper {
   *zoom: 1;
   text-align: center;
@@ -1094,24 +1107,24 @@ a {
 .results-wrapper:after {
   clear: both;
 }
-/* line 12, ../../scss/_elements/_results.scss */
+/* line 21, ../../scss/_elements/_results.scss */
 .results-wrapper .results-left {
   float: left;
   margin-left: 10%;
   width: 40%;
 }
-/* line 18, ../../scss/_elements/_results.scss */
+/* line 27, ../../scss/_elements/_results.scss */
 .results-wrapper .results-right {
   float: right;
   margin-right: 10%;
   width: 40%;
 }
-/* line 22, ../../scss/_elements/_results.scss */
+/* line 31, ../../scss/_elements/_results.scss */
 .results-wrapper .results-right.safe {
   padding-top: 20px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 30, ../../scss/_elements/_results.scss */
+  /* line 39, ../../scss/_elements/_results.scss */
   .results-wrapper .results-left, .results-wrapper .results-right {
     width: 50%;
     margin: 0;
@@ -1232,23 +1245,27 @@ a {
 .numbers > h2 {
   margin-bottom: 0;
 }
+/* line 30, ../../scss/_elements/_numbers.scss */
+.numbers.numbers-good, .numbers.numbers-bad {
+  padding-top: 0;
+}
 
-/* line 32, ../../scss/_elements/_numbers.scss */
+/* line 34, ../../scss/_elements/_numbers.scss */
 .numbers-good, .numbers-bad {
   text-align: center;
 }
-/* line 34, ../../scss/_elements/_numbers.scss */
+/* line 36, ../../scss/_elements/_numbers.scss */
 .numbers-good p, .numbers-bad p {
   font-size: 1.5em;
-  margin: 0;
   color: #ebba0f;
+  margin: 0;
 }
-/* line 39, ../../scss/_elements/_numbers.scss */
+/* line 41, ../../scss/_elements/_numbers.scss */
 .numbers-good h3, .numbers-bad h3 {
   font-size: 1em;
 }
 
-/* line 44, ../../scss/_elements/_numbers.scss */
+/* line 46, ../../scss/_elements/_numbers.scss */
 .light-background {
   background: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 1em;
@@ -1260,43 +1277,43 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 51, ../../scss/_elements/_numbers.scss */
+  /* line 53, ../../scss/_elements/_numbers.scss */
   .numbers {
     padding: 1em;
   }
-  /* line 53, ../../scss/_elements/_numbers.scss */
+  /* line 55, ../../scss/_elements/_numbers.scss */
   .numbers .numbers-good p, .numbers .numbers-bad p {
     font-size: 1em;
   }
 
-  /* line 57, ../../scss/_elements/_numbers.scss */
+  /* line 59, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     position: absolute;
     bottom: .5em;
     left: 50%;
   }
 
-  /* line 62, ../../scss/_elements/_numbers.scss */
+  /* line 64, ../../scss/_elements/_numbers.scss */
   .numbers-arrows-inside {
     margin-left: -53.5px;
   }
 
-  /* line 65, ../../scss/_elements/_numbers.scss */
+  /* line 67, ../../scss/_elements/_numbers.scss */
   .numbers > h2 {
     margin-bottom: 1em;
   }
 
-  /* line 68, ../../scss/_elements/_numbers.scss */
+  /* line 70, ../../scss/_elements/_numbers.scss */
   .title {
     height: 3.5em;
   }
-  /* line 70, ../../scss/_elements/_numbers.scss */
+  /* line 72, ../../scss/_elements/_numbers.scss */
   .title .double-lineheight {
     line-height: 3.5em;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 78, ../../scss/_elements/_numbers.scss */
+  /* line 80, ../../scss/_elements/_numbers.scss */
   .numbers-good, .numbers-bad {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1305,13 +1322,13 @@ a {
     padding-bottom: 1em;
   }
 
-  /* line 83, ../../scss/_elements/_numbers.scss */
+  /* line 85, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     padding-top: 2em;
     text-align: center;
   }
 
-  /* line 87, ../../scss/_elements/_numbers.scss */
+  /* line 89, ../../scss/_elements/_numbers.scss */
   .numbers-good-title, .numbers-bad-title {
     font-size: 1.5em;
   }
