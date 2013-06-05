@@ -1,3 +1,9 @@
+
+.results-box {
+	background: rgba(255,255,255,.2);
+	@include border-radius(1em);
+	padding: 1em;
+}
 .results-wrapper {
 	
 	@include clearfix();
@@ -29,6 +35,3 @@
 
 }
 
-.slider-container {
-	@include clearfix-alt;
-}
