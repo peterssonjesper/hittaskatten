@@ -5,48 +5,18 @@
 .section-inner {
 	position: relative;
 }
+
+.section-img {
+	margin: 0 auto;
+}
 @include media(mobile){
 	.slider-container {
 		@include clearfix;
 	}
-	.left-section {
-		float: left;
-		width: 50%;
-		.section-inner {
-			margin-bottom: -1em;
-		}
-	}
-	.right-section {
-		float: right;
-		width: 50%;
-		.section-inner {
-			margin-top: -1em;
-		}
-	}
-	.center-section {
-		clear: both;
-		margin: 0 auto;
-	}
-
-
 }
-
-
 @include media(tabletandabove) {
 	.section-img {
-		width: 100%;
 		display: block;
-	}
-	.section-left-img {
-		position: absolute;
-		top: 100%;
-		left: 0;
-	}
-	.section-right-img {
-	}
-
-	.left-section, .center-section, .right-section {
-		float: left;
 	}
 
 	.left-section {
@@ -60,7 +30,6 @@
 	}
 
 }
-
 
 .center-section {
 width: 50%;

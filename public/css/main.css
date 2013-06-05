@@ -848,7 +848,7 @@ html, body {
 
 /* line 5, ../../scss/_shared/_layout.scss */
 body {
-  background: url('../img/bg-pattern.png?1369473950');
+  background: url('../img/bg-pattern.png?1369470065');
   color: white;
   position: relative;
   font-family: 'Cutive', serif;
@@ -961,7 +961,7 @@ a {
 
 /* line 18, ../../scss/_elements/_form.scss */
 .submitform-inner {
-  background: url('../img/bg-form.png?1369484788') repeat;
+  background: url('../img/bg-form.png?1369478589') repeat;
   padding: 2rem;
   position: relative;
   border-bottom: .5rem solid #606060;
@@ -1199,14 +1199,14 @@ a {
 
 /* line 7, ../../scss/_elements/_numbers.scss */
 .left-arrow {
-  background: url('../img/arrow-left.png?1369489626');
+  background: url('../img/arrow-left.png?1369487893');
   background-size: cover;
   margin-right: 10px;
 }
 
 /* line 13, ../../scss/_elements/_numbers.scss */
 .right-arrow {
-  background: url('../img/arrow-right.png?1369489626');
+  background: url('../img/arrow-right.png?1369487902');
   background-size: cover;
   margin-left: 10px;
 }
@@ -1235,22 +1235,23 @@ a {
 .numbers > h2 {
   margin-bottom: 0;
 }
-/* line 31, ../../scss/_elements/_numbers.scss */
-.numbers .numbers-good p, .numbers .numbers-bad p {
+
+/* line 32, ../../scss/_elements/_numbers.scss */
+.numbers-good, .numbers-bad {
+  text-align: center;
+}
+/* line 34, ../../scss/_elements/_numbers.scss */
+.numbers-good p, .numbers-bad p {
   font-size: 1.5em;
   margin: 0;
   color: #ebba0f;
 }
-/* line 36, ../../scss/_elements/_numbers.scss */
-.numbers .numbers-good h3, .numbers .numbers-bad h3 {
+/* line 39, ../../scss/_elements/_numbers.scss */
+.numbers-good h3, .numbers-bad h3 {
   font-size: 1em;
 }
-/* line 39, ../../scss/_elements/_numbers.scss */
-.numbers .numbers-good p, .numbers .numbers-good h3, .numbers .numbers-bad p, .numbers .numbers-bad h3 {
-  text-align: center;
-}
 
-/* line 45, ../../scss/_elements/_numbers.scss */
+/* line 44, ../../scss/_elements/_numbers.scss */
 .numbers.light-background {
   background: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 1em;
@@ -1262,60 +1263,44 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 52, ../../scss/_elements/_numbers.scss */
-  .numbers-good {
-    width: 40%;
-    float: left;
-  }
-
-  /* line 56, ../../scss/_elements/_numbers.scss */
-  .numbers-bad {
-    width: 40%;
-    float: right;
-  }
-
-  /* line 60, ../../scss/_elements/_numbers.scss */
+  /* line 51, ../../scss/_elements/_numbers.scss */
   .numbers {
     padding: 1em;
   }
-  /* line 62, ../../scss/_elements/_numbers.scss */
+  /* line 53, ../../scss/_elements/_numbers.scss */
   .numbers .numbers-good p, .numbers .numbers-bad p {
     font-size: 1em;
   }
 
-  /* line 66, ../../scss/_elements/_numbers.scss */
+  /* line 57, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
     position: absolute;
     bottom: .5em;
     left: 50%;
   }
 
-  /* line 71, ../../scss/_elements/_numbers.scss */
+  /* line 62, ../../scss/_elements/_numbers.scss */
   .numbers-arrows-inside {
     margin-left: -53.5px;
   }
 
-  /* line 74, ../../scss/_elements/_numbers.scss */
+  /* line 65, ../../scss/_elements/_numbers.scss */
   .numbers > h2 {
     margin-bottom: 1em;
   }
 
-  /* line 77, ../../scss/_elements/_numbers.scss */
+  /* line 68, ../../scss/_elements/_numbers.scss */
   .title {
     height: 3.5em;
   }
-  /* line 79, ../../scss/_elements/_numbers.scss */
+  /* line 70, ../../scss/_elements/_numbers.scss */
   .title .double-lineheight {
     line-height: 3.5em;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 87, ../../scss/_elements/_numbers.scss */
+  /* line 78, ../../scss/_elements/_numbers.scss */
   .numbers-good, .numbers-bad {
-    display: inline;
-    float: left;
-    width: 39.58333%;
-    margin: 0 1.04167%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1323,23 +1308,13 @@ a {
     padding-bottom: 1em;
   }
 
-  /* line 93, ../../scss/_elements/_numbers.scss */
-  .numbers-bad {
-    text-align: right;
-    padding-right: 1em;
-  }
-
-  /* line 97, ../../scss/_elements/_numbers.scss */
+  /* line 83, ../../scss/_elements/_numbers.scss */
   .numbers-arrows {
-    display: inline;
-    float: left;
-    width: 14.58333%;
-    margin: 0 1.04167%;
     padding-top: 2em;
     text-align: center;
   }
 
-  /* line 102, ../../scss/_elements/_numbers.scss */
+  /* line 87, ../../scss/_elements/_numbers.scss */
   .numbers-good-title, .numbers-bad-title {
     font-size: 1.5em;
   }
@@ -1390,8 +1365,13 @@ a {
   position: relative;
 }
 
+/* line 9, ../../scss/_elements/_wagon.scss */
+.section-img {
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 767px) {
-  /* line 9, ../../scss/_elements/_wagon.scss */
+  /* line 13, ../../scss/_elements/_wagon.scss */
   .slider-container {
     *zoom: 1;
   }
@@ -1404,85 +1384,46 @@ a {
   .slider-container:after {
     clear: both;
   }
-
-  /* line 12, ../../scss/_elements/_wagon.scss */
-  .left-section {
-    float: left;
-    width: 50%;
-  }
-  /* line 15, ../../scss/_elements/_wagon.scss */
-  .left-section .section-inner {
-    margin-bottom: -1em;
-  }
-
-  /* line 19, ../../scss/_elements/_wagon.scss */
-  .right-section {
-    float: right;
-    width: 50%;
-  }
-  /* line 22, ../../scss/_elements/_wagon.scss */
-  .right-section .section-inner {
-    margin-top: -1em;
-  }
-
-  /* line 26, ../../scss/_elements/_wagon.scss */
-  .center-section {
-    clear: both;
-    margin: 0 auto;
-  }
 }
 @media only screen and (min-width: 768px) {
-  /* line 36, ../../scss/_elements/_wagon.scss */
+  /* line 18, ../../scss/_elements/_wagon.scss */
   .section-img {
-    width: 100%;
     display: block;
   }
 
-  /* line 40, ../../scss/_elements/_wagon.scss */
-  .section-left-img {
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-
-  /* line 48, ../../scss/_elements/_wagon.scss */
-  .left-section, .center-section, .right-section {
-    float: left;
-  }
-
-  /* line 52, ../../scss/_elements/_wagon.scss */
+  /* line 22, ../../scss/_elements/_wagon.scss */
   .left-section {
     padding-top: 10%;
     padding-left: 5%;
     width: 20%;
   }
 
-  /* line 58, ../../scss/_elements/_wagon.scss */
+  /* line 28, ../../scss/_elements/_wagon.scss */
   .right-section {
     width: 20%;
   }
 }
-/* line 65, ../../scss/_elements/_wagon.scss */
+/* line 34, ../../scss/_elements/_wagon.scss */
 .center-section {
   width: 50%;
 }
 
-/* line 69, ../../scss/_elements/_wagon.scss */
+/* line 38, ../../scss/_elements/_wagon.scss */
 .center-section img {
   width: 100%;
 }
 
-/* line 72, ../../scss/_elements/_wagon.scss */
+/* line 41, ../../scss/_elements/_wagon.scss */
 .right-section img {
   width: 100%;
 }
 
-/* line 75, ../../scss/_elements/_wagon.scss */
+/* line 44, ../../scss/_elements/_wagon.scss */
 .left-section img {
   width: 100%;
 }
 
-/* line 79, ../../scss/_elements/_wagon.scss */
+/* line 48, ../../scss/_elements/_wagon.scss */
 #railroad {
   position: absolute;
   top: 0;
@@ -1490,12 +1431,12 @@ a {
   background-size: 100%;
 }
 
-/* line 86, ../../scss/_elements/_wagon.scss */
+/* line 55, ../../scss/_elements/_wagon.scss */
 #p_curve {
   height: 400px;
 }
 
-/* line 89, ../../scss/_elements/_wagon.scss */
+/* line 58, ../../scss/_elements/_wagon.scss */
 #p_curve .wagon {
   background-image: url("../img/vagn.png");
   background-repeat: no-repeat;
@@ -1507,15 +1448,29 @@ a {
   height: 102px;
 }
 
-/* set slider dimension here */
 /* line 2, ../../scss/_elements/_pathslider.scss */
+.slider-container {
+  zoom: 1;
+}
+/* line 36, ../../scss/_shared/_mixins.scss */
+.slider-container:before, .slider-container:after {
+  content: "";
+  display: table;
+}
+/* line 40, ../../scss/_shared/_mixins.scss */
+.slider-container:after {
+  clear: both;
+}
+
+/* set slider dimension here */
+/* line 7, ../../scss/_elements/_pathslider.scss */
 #slider {
   width: 200px;
   height: 200px;
 }
 
 /* Basic solid color slider grip */
-/* line 8, ../../scss/_elements/_pathslider.scss */
+/* line 13, ../../scss/_elements/_pathslider.scss */
 .pathslider-grip {
   width: 30px;
   height: 15px;
@@ -1539,7 +1494,7 @@ a {
 }
 
 /* grip hover/sliding state */
-/* line 28, ../../scss/_elements/_pathslider.scss */
+/* line 33, ../../scss/_elements/_pathslider.scss */
 .pathslider-grip.sliding, .pathslider-grip:hover {
   border-color: #8ce;
   -webkit-box-shadow: 0 0 15px #8ce;
@@ -1548,7 +1503,7 @@ a {
 }
 
 /* slider extra css - same as #slider above */
-/* line 36, ../../scss/_elements/_pathslider.scss */
+/* line 41, ../../scss/_elements/_pathslider.scss */
 .pathslider {
   position: relative;
 }
@@ -1558,7 +1513,7 @@ a {
   add these using the gripClass option
  *************/
 /* shiny silver - sorta */
-/* line 45, ../../scss/_elements/_pathslider.scss */
+/* line 50, ../../scss/_elements/_pathslider.scss */
 .silver {
   border-color: #949494;
   background-color: #ebebeb;
@@ -1575,7 +1530,7 @@ a {
 }
 
 /* shiny black */
-/* line 57, ../../scss/_elements/_pathslider.scss */
+/* line 62, ../../scss/_elements/_pathslider.scss */
 .black {
   border-color: #000000;
   background-color: #3b3b3b;
@@ -1594,7 +1549,7 @@ a {
 /* Small circular chrome knob
    including ".pathslider-grip" to remove border & box shadow
  */
-/* line 71, ../../scss/_elements/_pathslider.scss */
+/* line 76, ../../scss/_elements/_pathslider.scss */
 .pathslider-grip.chrome1 {
   width: 18px;
   height: 18px;
@@ -1609,7 +1564,7 @@ a {
 }
 
 /* Large curvy chrome slide */
-/* line 85, ../../scss/_elements/_pathslider.scss */
+/* line 90, ../../scss/_elements/_pathslider.scss */
 .pathslider-grip.chrome2 {
   width: 57px;
   height: 35px;
